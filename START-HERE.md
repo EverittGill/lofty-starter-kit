@@ -53,6 +53,25 @@ You are already in the kit folder if you are reading this. Run commands from her
 2. Tell them: later, open a terminal in that folder, run `claude`, and type `/hey-claude`. The first
    run interviews them. `/see-you-later` ends each session.
 
+## Phase 2B (optional): Connect Claude to their Lofty
+
+Lofty publishes its own official connector (an MCP server). Nothing to download. It lets you look
+up and update leads, tags, tasks, saved searches and transactions in plain conversation. It can't
+create email templates or Smart Plans (that is what the extension is for). It can also mass-text
+and mass-email, so the key starts **view-only**.
+
+1. The agent creates a key: **Lofty → Settings → Integrations → API → create a key**. Name it
+   "Claude". Give it **View** permission only, and an expiry date if offered. They copy it.
+2. With the key still on their clipboard, the agent types this into Claude Code themselves (the `!`
+   runs it in this session; the key goes from the clipboard into Claude Code's settings, never chat):
+   ```
+   ! claude mcp add --transport http lofty https://mcp.lofty.com/mcp -s user --header "Authorization: Bearer $(pbpaste)"
+   ```
+3. They restart Claude Code. Use a read-only lofty tool to look up one of their own leads and
+   confirm it is **their** account. **STOP** if it's anyone else's.
+4. If they later want you to add tags, notes or tasks through it, they make a new key with only
+   those permissions. Never give a key permission to send email or texts.
+
 ## Phase 3: Prepare
 
 1. **Account basics** (the agent, in Lofty settings): time zone, profile, email signature with
