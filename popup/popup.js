@@ -84,7 +84,7 @@ async function init() {
   elements.startMigration.addEventListener('click', startMigration);
   const forget = document.getElementById('forget-history');
   if (forget) forget.addEventListener('click', async () => {
-    await chrome.storage.local.remove('uploadedPlans');
+    await chrome.storage.local.remove(['uploadedPlans', 'finishList']);
     log('Upload history cleared.', 'info');
   });
 
@@ -100,6 +100,51 @@ async function init() {
   elements.tagList = document.getElementById('tag-list');
   elements.analyzeTags.addEventListener('click', analyzeTags);
   elements.syncTags.addEventListener('click', syncMissingTags);
+
+  await loadDetails();
+  const copyBtn = document.getElementById('copy-finish');
+  copyBtn.addEventListener('click', async () => { await navigator.clipboard.writeText(elements.debugOutput.textContent); copyBtn.textContent = 'Copied'; });
+  const last = (await chrome.storage.local.get(['finishList'])).finishList;
+  if (last) { elements.debugOutput.textContent = last; elements.debugOutput.style.display = 'block'; copyBtn.style.display = 'inline-block'; }
+  checkLoftyConnection();
+}
+
+// Agent details: website, brokerage and links that fill the {{PLACEHOLDERS}} in the emails.
+let rawTemplates = {};
+let agentDetails = null;
+function applyDetails() {
+  const d = agentDetails;
+  const out = {};
+  for (const [k, t] of Object.entries(rawTemplates)) {
+    const fill = s => !d ? s : (s || '')
+      .replaceAll('{{WEBSITE}}', d.website).replaceAll('{{ABOUT_ME_URL}}', d.about || d.website)
+      .replaceAll('{{GOOGLE_REVIEWS_URL}}', d.reviews || d.website).replaceAll('{{BROKERAGE}}', d.brokerage)
+      .replaceAll('{{SELLERS_GUIDE_URL}}', d.website);
+    out[k] = { ...t, subject: fill(t.subject), body: fill(t.body) };
+  }
+  Converter.setTemplateMapping(out);
+}
+function needsDetails() { return Object.values(rawTemplates).some(t => /\{\{[A-Z_]+\}\}/.test((t.subject || '') + (t.body || ''))); }
+async function loadDetails() {
+  agentDetails = (await chrome.storage.local.get(['agentDetails'])).agentDetails || null;
+  const st = document.getElementById('details-status');
+  if (!needsDetails()) { document.getElementById('agent-details').style.display = 'none'; return; }
+  if (agentDetails) {
+    document.getElementById('d-website').value = agentDetails.website; document.getElementById('d-brokerage').value = agentDetails.brokerage;
+    document.getElementById('d-about').value = agentDetails.about || ''; document.getElementById('d-reviews').value = agentDetails.reviews || '';
+    setStatus(st, 'Saved', 'success'); applyDetails();
+  }
+  document.getElementById('save-details').addEventListener('click', async () => {
+    const v = id => document.getElementById(id).value.trim();
+    let website = v('d-website').replace(/\/$/, '');
+    if (website && !/^https?:\/\//.test(website)) website = 'https://' + website;
+    const link = s => s && !/^https?:\/\//.test(s) ? 'https://' + s : s;
+    if (!website || !v('d-brokerage')) { setStatus(st, 'Website and brokerage are both needed', 'error'); return; }
+    agentDetails = { website, brokerage: v('d-brokerage'), about: link(v('d-about')), reviews: link(v('d-reviews')) };
+    await chrome.storage.local.set({ agentDetails });
+    applyDetails();
+    setStatus(st, 'Saved', 'success');
+  });
 }
 
 // Logging
@@ -128,8 +173,8 @@ async function loadEmailTemplates() {
     }
     const data = await response.json();
 
-    // Set the template mapping in the Converter
-    Converter.setTemplateMapping(data.templates);
+    rawTemplates = data.templates;
+    applyDetails();
     log(`Loaded ${Object.keys(data.templates).length} email templates`, 'success');
   } catch (error) {
     log(`Warning: Could not load email templates: ${error.message}`, 'error');
@@ -1094,6 +1139,10 @@ function missingStepTags(plan) {
 // Migration
 async function startMigration() {
   if (selectedPlanIds.size === 0) return;
+  if (needsDetails() && !agentDetails) {
+    log('Fill in "Your details" at the top and press Save first.', 'error');
+    return;
+  }
 
   // Check Lofty connection first
   if (!loftyClient.teamId) {
@@ -1291,8 +1340,12 @@ async function startMigration() {
   if (handNotes.length > 0) {
     log(`=== TO FINISH IN LOFTY (${handNotes.length}) ===`, 'info');
     handNotes.forEach(n => log(n, 'info'));
-    elements.debugOutput.textContent = handNotes.join('\n\n');
+    const prev = (await chrome.storage.local.get(['finishList'])).finishList;
+    const all = (prev ? prev + '\n\n' : 'TO FINISH IN LOFTY\n\n') + handNotes.join('\n\n');
+    await chrome.storage.local.set({ finishList: all });
+    elements.debugOutput.textContent = all;
     elements.debugOutput.style.display = 'block';
+    document.getElementById('copy-finish').style.display = 'inline-block';
   }
 
   // If there were failures, show summary
@@ -1304,7 +1357,7 @@ async function startMigration() {
     log(`===========================\n`, 'error');
 
     // Also show in debug output for easy copying
-    elements.debugOutput.textContent = (handNotes.length ? handNotes.join('\n\n') + '\n\n=== FAILED ===\n' : '') + JSON.stringify(failedPlans, null, 2);
+    elements.debugOutput.textContent = (handNotes.length ? elements.debugOutput.textContent + '\n\n' : '') + '=== DID NOT UPLOAD ===\n' + failedPlans.map(f => `${f.name || f.planName || ''}: ${f.error || JSON.stringify(f)}`).join('\n');
     elements.debugOutput.style.display = 'block';
   }
 

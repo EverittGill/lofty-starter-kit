@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>FUB to Lofty Migrator</title>
+  <title>KTS Drips to Lofty</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -19,6 +19,18 @@
       <div id="fub-status" class="status"></div>
     </section>
 
+    <!-- Your details -->
+    <section id="agent-details" class="section">
+      <h2>Your details</h2>
+      <p class="hint">These go into the emails wherever they mention your website or brokerage. Saved in this browser only.</p>
+      <input type="text" id="d-website" placeholder="Your website, e.g. https://www.yoursite.com" style="width:100%;margin-bottom:6px;padding:6px;">
+      <input type="text" id="d-brokerage" placeholder="Your brokerage name" style="width:100%;margin-bottom:6px;padding:6px;">
+      <input type="text" id="d-about" placeholder="Your About Me page link (optional)" style="width:100%;margin-bottom:6px;padding:6px;">
+      <input type="text" id="d-reviews" placeholder="Your Google review link (optional)" style="width:100%;margin-bottom:6px;padding:6px;">
+      <button id="save-details" class="primary">Save</button>
+      <div id="details-status" class="status"></div>
+    </section>
+
     <!-- Step 2: Lofty Connection -->
     <section id="lofty-config" class="section">
       <h2>1. Lofty connection</h2>
@@ -29,7 +41,8 @@
       <button style="display:none" id="debug-info" class="secondary">Debug</button>
       <button style="display:none" id="analyze-sig" class="secondary">Analyze Sig</button>
       <div id="lofty-status" class="status"></div>
-      <pre id="debug-output" style="display:none; background:#1e1e1e; color:#0f0; padding:8px; font-size:10px; max-height:200px; overflow:auto; margin-top:8px; border-radius:4px;"></pre>
+      <button id="copy-finish" class="small" style="display:none;margin-top:8px;">Copy the "to finish" list</button>
+      <pre id="debug-output" style="display:none; background:#1e1e1e; color:#0f0; padding:8px; font-size:10px; max-height:400px; overflow:auto; margin-top:8px; border-radius:4px; white-space:pre-wrap;"></pre>
 
       <!-- Script Search Section -->
       <div id="script-search-section" style="display:none; margin-top:10px; padding:10px; background:#1a3a1a; border-radius:4px; border:1px solid #2a5a2a;">
@@ -100,7 +113,7 @@
       <h2>4. Upload</h2>
       <div style="margin-bottom:8px;font-size:11px;color:#aaa;">Plans upload as drafts. To list only the tags the ticked plans need, tick plans before Check tags. <a href="#" id="forget-history" style="color:#8ab4f8;">Forget upload history</a></div>
       <label style="display:none"><input type="checkbox" id="include-first-texts"> Add each new-lead drip's first text as step 1 (automatic text: only for leads who agreed to texts)</label>
-      <div class="destination-selector" style="margin-bottom: 12px;">
+      <div class="destination-selector" style="display:none">
         <label style="font-size: 12px; color: #aaa; margin-right: 8px;">Destination:</label>
         <select id="destination-select" style="padding: 6px 12px; border-radius: 4px; background: #2a2a2a; color: #fff; border: 1px solid #444;">
           <option value="personal" selected>Personal (Private)</option>

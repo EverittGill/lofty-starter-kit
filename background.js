@@ -496,3 +496,11 @@ async function handleRelayToLoftyTab(msg) {
     });
   });
 }
+
+// Open the tool as a full tab (a popup closes, and stops the upload, as soon as you click elsewhere).
+chrome.action.onClicked.addListener(async () => {
+  const url = chrome.runtime.getURL('popup/popup.html');
+  const open = await chrome.tabs.query({ url });
+  if (open.length) { await chrome.tabs.update(open[0].id, { active: true }); await chrome.windows.update(open[0].windowId, { focused: true }); }
+  else await chrome.tabs.create({ url });
+});

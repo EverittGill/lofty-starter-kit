@@ -1,8 +1,0 @@
-[
- {"worker": "*KTS AP New Buyer Lead - delayed text", "leadSources": ["Ylopo • Buyers (default rule)"]},
- {"worker": "*KTS AP New Ylopo Direct Connect", "leadSources": ["Ylopo • Buyers (rule: Tags include any of YLOPO_DIRECT_CONNECT_FB, YLOPO_DIRECT_CONNECT_PPC)", "Direct Connect FB • Buyers", "Direct Connect PPC • Buyers", "Ylopo Seller • Sellers (rule 1: same tags)"]},
- {"worker": "*KTS AP New Seller Lead - Cash Offer", "leadSources": ["Ylopo Seller • Sellers (rule 2: Tags include Y_SELLER_CASH_OFFER_REQUESTED)"]},
- {"worker": "*KTS AP Automated Valuation Engagement - Ylopo", "leadSources": ["Ylopo Seller • Sellers (default rule)"]},
- {"worker": "*KTS AP Branded Website - New Form", "leadSources": ["Branded Website • Buyers"]},
- {"worker": "*KTS AP Branded Website - Realtor.com", "leadSources": ["realtordotcom • Sellers", "UpNest by Realtor.com • Sellers"]}
-]
