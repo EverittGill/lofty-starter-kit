@@ -1,7 +1,7 @@
 {
  "_metadata": {
   "source": "fub-starter-kit",
-  "builtAt": "2026-11-20T18:01:27.191Z",
+  "builtAt": "2026-11-20T18:24:43.251Z",
   "website": "{{WEBSITE}}",
   "brokerage": "{{BROKERAGE}}"
  },
@@ -2302,7 +2302,7 @@
    "id": 581,
    "name": "*KTS Ylopo Private Showing #3",
    "subject": "Clients searching for a home like yours on #lead_mailing_address#",
-   "body": "<div>Hi #lead_first_name#,<br></div><div><br></div><div>I am ready to advertise your property to my buyers, but I need to discuss a few things with you first.&nbsp;<br></div><div>Are you available in the next couple of days to discuss?&nbsp;<br></div><div><br></div><div>Here is a link to report I am referencing: #custom_ylopo_seller_report#<br></div><div><br></div><div>Thanks,<br></div><div>#agent_name#<br></div><div><br></div>"
+   "body": "<div>Hi #lead_first_name#,<br></div><div><br></div><div>I am ready to advertise your property to my buyers, but I need to discuss a few things with you first.&nbsp;<br></div><div>Are you available in the next couple of days to discuss?&nbsp;<br></div><div><br></div><div>Here is a link to report I am referencing: #custom_field_custom_ylopo_seller_report#<br></div><div><br></div><div>Thanks,<br></div><div>#agent_name#<br></div><div><br></div>"
   },
   "582": {
    "id": 582,
@@ -2583,8 +2583,8 @@
   "628": {
    "id": 628,
    "name": "*KTS Open House #1 - Manual",
-   "subject": "#lead_first_name#, it was nice to meet you at #custom_open_house_address#",
-   "body": "<div>Hi #lead_first_name#,<br></div><div><br></div><div>I'm glad we had a chance to meet at the open house for&nbsp;#custom_open_house_address#. Out of curiosity, what did you think of the home?<br></div><div><br></div><div>Thanks,<br></div><div>#agent_name#<br></div>"
+   "subject": "#lead_first_name#, it was nice to meet you at the open house",
+   "body": "<div>Hi #lead_first_name#,<br></div><div><br></div><div>I'm glad we had a chance to meet at the open house for&nbsp;the open house. Out of curiosity, what did you think of the home?<br></div><div><br></div><div>Thanks,<br></div><div>#agent_name#<br></div>"
   },
   "629": {
    "id": 629,

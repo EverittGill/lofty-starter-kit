@@ -1,7 +1,7 @@
 {
  "_metadata": {
   "source": "fub-starter-kit",
-  "builtAt": "2026-11-20T18:01:27.191Z",
+  "builtAt": "2026-11-20T18:24:43.251Z",
   "website": "{{WEBSITE}}",
   "brokerage": "{{BROKERAGE}}"
  },
@@ -18,7 +18,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
    },
    "steps": [
@@ -256,7 +256,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from #lead_source# regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
     "delayMinutes": 0
    },
    "steps": [
@@ -494,7 +494,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from my website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? By the way, my assistant may have already reached out, but I wanted to call you soon.",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from my website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? By the way, my assistant may have already reached out, but I wanted to call you soon.",
     "delayMinutes": 60
    },
    "steps": [
@@ -714,7 +714,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request for a real estate agent from #lead_source# for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request for a real estate agent from #lead_source# for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 1
    },
    "steps": [
@@ -922,7 +922,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#.This is #agent_name# with #assigned_agent_company_name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#.This is #agent_name# with #Assigned_Agent_Company_Name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 45
    },
    "steps": [
@@ -1191,7 +1191,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
    },
    "steps": [
@@ -1309,7 +1309,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request for a home valuation for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request for a home valuation for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 1
    },
    "steps": [
@@ -1505,7 +1505,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
    },
    "steps": [
@@ -1917,7 +1917,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
     "delayMinutes": 0
    },
    "steps": [
@@ -2059,7 +2059,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I received your request to review your options for your property. If you'd rather I don't text you, just tell me to stop. Do you prefer a quick transaction, or do you need a bit more time?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I received your request to review your options for your property. If you'd rather I don't text you, just tell me to stop. Do you prefer a quick transaction, or do you need a bit more time?",
     "delayMinutes": 1
    },
    "steps": [
@@ -2273,7 +2273,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your inquiry from my website regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. I will be reaching out ASAP. Is this the best number to reach you on? ",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your inquiry from my website regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. I will be reaching out ASAP. Is this the best number to reach you on? ",
     "delayMinutes": 1440
    },
    "steps": [
@@ -4907,7 +4907,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. Thanks for taking a look at my automated home valuation tool. If you'd rather I don't text you, just tell me to stop. I've recently noticed that the program is just a starting point for understanding a home's value.  Would it be helpful to put together a custom report for you and send it over as soon as possible? \n\nP.s. My assistant may have already reached out, but I wanted to talk to you soon.",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. Thanks for taking a look at my automated home valuation tool. If you'd rather I don't text you, just tell me to stop. I've recently noticed that the program is just a starting point for understanding a home's value.  Would it be helpful to put together a custom report for you and send it over as soon as possible? \n\nP.s. My assistant may have already reached out, but I wanted to talk to you soon.",
     "delayMinutes": 60
    },
    "steps": [
@@ -5363,7 +5363,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#.This is #agent_name# with #assigned_agent_company_name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#.This is #agent_name# with #Assigned_Agent_Company_Name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 45
    },
    "steps": [
@@ -6070,7 +6070,7 @@
    "pauseOnReply": true,
    "pauseOnStageChange": true,
    "firstText": {
-    "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+    "body": "Hi #lead_first_name#. This is #agent_name# with #Assigned_Agent_Company_Name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
    },
    "steps": [
