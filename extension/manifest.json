@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "FUB to Lofty Migrator",
+  "version": "1.0.0",
+  "description": "Migrate Action Plans from Follow Up Boss to Lofty Smart Plans",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "cookies",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://api.followupboss.com/*",
+    "https://crm.lofty.com/*",
+    "https://*.lofty.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "FUB to Lofty Migrator"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://crm.lofty.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "data/templates.json", "data/action-plans.json"],
+      "matches": ["https://crm.lofty.com/*"]
+    }
+  ]
+}

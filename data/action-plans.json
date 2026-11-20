@@ -1,0 +1,6732 @@
+[
+ {
+  "key": 43,
+  "name": "*KTS AP New Buyer Lead",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from %source_name% for the home at %inquiry_address%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 197,
+    "emailTemplateName": "*KTS New Buyer #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 198,
+    "emailTemplateName": "*KTS New Buyer #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 229,
+    "emailTemplateName": "*KTS New Buyer #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 199,
+    "emailTemplateName": "*KTS New Buyer #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 200,
+    "emailTemplateName": "*KTS New Buyer #5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 201,
+    "emailTemplateName": "*KTS New Buyer #6"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 202,
+    "emailTemplateName": "*KTS New Buyer #7"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 203,
+    "emailTemplateName": "*KTS New Buyer #8"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 230,
+    "emailTemplateName": "*KTS New Buyer #8.5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 204,
+    "emailTemplateName": "*KTS New Buyer #9"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 205,
+    "emailTemplateName": "*KTS New Buyer #10"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 206,
+    "emailTemplateName": "*KTS New Buyer #11"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 207,
+    "emailTemplateName": "*KTS New Buyer #12"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 208,
+    "emailTemplateName": "*KTS New Buyer #13"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 209,
+    "emailTemplateName": "*KTS New Buyer #14"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 210,
+    "emailTemplateName": "*KTS New Buyer #15"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 211,
+    "emailTemplateName": "*KTS New Buyer #16"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 212,
+    "emailTemplateName": "*KTS New Buyer #17"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 213,
+    "emailTemplateName": "*KTS New Buyer #18"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 214,
+    "emailTemplateName": "*KTS New Buyer #19"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 215,
+    "emailTemplateName": "*KTS New Buyer #20"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 216,
+    "emailTemplateName": "*KTS New Buyer #21"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 217,
+    "emailTemplateName": "*KTS New Buyer #22"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 218,
+    "emailTemplateName": "*KTS New Buyer #23"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 219,
+    "emailTemplateName": "*KTS New Buyer #24"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 220,
+    "emailTemplateName": "*KTS New Buyer #25"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 221,
+    "emailTemplateName": "*KTS New Buyer #26"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 222,
+    "emailTemplateName": "*KTS New Buyer #27"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 223,
+    "emailTemplateName": "*KTS New Buyer #28"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 224,
+    "emailTemplateName": "*KTS New Buyer #29"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 225,
+    "emailTemplateName": "*KTS New Buyer #30"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 226,
+    "emailTemplateName": "*KTS New Buyer #31"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 227,
+    "emailTemplateName": "*KTS New Buyer #32"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 44,
+  "name": "*KTS AP New Buyer Lead - referral source",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from %source_name% regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 231,
+    "emailTemplateName": "KTS New Buyer  #1 - referral source"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 198,
+    "emailTemplateName": "*KTS New Buyer #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 229,
+    "emailTemplateName": "*KTS New Buyer #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 199,
+    "emailTemplateName": "*KTS New Buyer #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 200,
+    "emailTemplateName": "*KTS New Buyer #5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 201,
+    "emailTemplateName": "*KTS New Buyer #6"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 202,
+    "emailTemplateName": "*KTS New Buyer #7"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 203,
+    "emailTemplateName": "*KTS New Buyer #8"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 230,
+    "emailTemplateName": "*KTS New Buyer #8.5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 204,
+    "emailTemplateName": "*KTS New Buyer #9"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 205,
+    "emailTemplateName": "*KTS New Buyer #10"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 206,
+    "emailTemplateName": "*KTS New Buyer #11"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 207,
+    "emailTemplateName": "*KTS New Buyer #12"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 208,
+    "emailTemplateName": "*KTS New Buyer #13"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 209,
+    "emailTemplateName": "*KTS New Buyer #14"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 210,
+    "emailTemplateName": "*KTS New Buyer #15"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 211,
+    "emailTemplateName": "*KTS New Buyer #16"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 212,
+    "emailTemplateName": "*KTS New Buyer #17"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 213,
+    "emailTemplateName": "*KTS New Buyer #18"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 214,
+    "emailTemplateName": "*KTS New Buyer #19"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 215,
+    "emailTemplateName": "*KTS New Buyer #20"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 216,
+    "emailTemplateName": "*KTS New Buyer #21"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 217,
+    "emailTemplateName": "*KTS New Buyer #22"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 218,
+    "emailTemplateName": "*KTS New Buyer #23"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 219,
+    "emailTemplateName": "*KTS New Buyer #24"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 220,
+    "emailTemplateName": "*KTS New Buyer #25"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 221,
+    "emailTemplateName": "*KTS New Buyer #26"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 222,
+    "emailTemplateName": "*KTS New Buyer #27"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 223,
+    "emailTemplateName": "*KTS New Buyer #28"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 224,
+    "emailTemplateName": "*KTS New Buyer #29"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 225,
+    "emailTemplateName": "*KTS New Buyer #30"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 226,
+    "emailTemplateName": "*KTS New Buyer #31"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 227,
+    "emailTemplateName": "*KTS New Buyer #32"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 45,
+  "name": "*KTS AP New Buyer Lead - delayed text",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 60,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from my website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? By the way, my assistant may have already reached out, but I wanted to call you soon.",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 197,
+    "emailTemplateName": "*KTS New Buyer #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 198,
+    "emailTemplateName": "*KTS New Buyer #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 199,
+    "emailTemplateName": "*KTS New Buyer #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 200,
+    "emailTemplateName": "*KTS New Buyer #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 201,
+    "emailTemplateName": "*KTS New Buyer #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 202,
+    "emailTemplateName": "*KTS New Buyer #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 203,
+    "emailTemplateName": "*KTS New Buyer #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 205,
+    "emailTemplateName": "*KTS New Buyer #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 206,
+    "emailTemplateName": "*KTS New Buyer #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 207,
+    "emailTemplateName": "*KTS New Buyer #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 208,
+    "emailTemplateName": "*KTS New Buyer #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 209,
+    "emailTemplateName": "*KTS New Buyer #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 210,
+    "emailTemplateName": "*KTS New Buyer #15"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 211,
+    "emailTemplateName": "*KTS New Buyer #16"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 212,
+    "emailTemplateName": "*KTS New Buyer #17"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 213,
+    "emailTemplateName": "*KTS New Buyer #18"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 214,
+    "emailTemplateName": "*KTS New Buyer #19"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 215,
+    "emailTemplateName": "*KTS New Buyer #20"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 216,
+    "emailTemplateName": "*KTS New Buyer #21"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 217,
+    "emailTemplateName": "*KTS New Buyer #22"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 218,
+    "emailTemplateName": "*KTS New Buyer #23"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 219,
+    "emailTemplateName": "*KTS New Buyer #24"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 220,
+    "emailTemplateName": "*KTS New Buyer #25"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 221,
+    "emailTemplateName": "*KTS New Buyer #26"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 222,
+    "emailTemplateName": "*KTS New Buyer #27"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 223,
+    "emailTemplateName": "*KTS New Buyer #28"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 224,
+    "emailTemplateName": "*KTS New Buyer #29"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 225,
+    "emailTemplateName": "*KTS New Buyer #30"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 226,
+    "emailTemplateName": "*KTS New Buyer #31"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 227,
+    "emailTemplateName": "*KTS New Buyer #32"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 46,
+  "name": "*KTS AP New Seller Lead",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 1,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request for a real estate agent from %source_name% for %contact_street%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Seller"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 232,
+    "emailTemplateName": "*KTS New Seller #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 233,
+    "emailTemplateName": "*KTS New Seller #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 234,
+    "emailTemplateName": "*KTS New Seller #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 247,
+    "emailTemplateName": "*KTS New Seller #3.5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 235,
+    "emailTemplateName": "*KTS New Seller #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 236,
+    "emailTemplateName": "*KTS New Seller #5"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 237,
+    "emailTemplateName": "*KTS New Seller #5.5"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 238,
+    "emailTemplateName": "*KTS New Seller #6"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 246,
+    "emailTemplateName": "*KTS New Seller #6.5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 239,
+    "emailTemplateName": "*KTS New Seller #7"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 258,
+    "emailTemplateName": "*KTS New Seller #7.2"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 249,
+    "emailTemplateName": "*KTS New Seller #7.5"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 240,
+    "emailTemplateName": "*KTS New Seller #8"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 251,
+    "emailTemplateName": "*KTS New Seller #8.5"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 241,
+    "emailTemplateName": "*KTS New Seller #9"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 250,
+    "emailTemplateName": "*KTS New Seller #9.5"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 242,
+    "emailTemplateName": "*KTS New Seller #10"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 256,
+    "emailTemplateName": "*KTS New Seller #10.5"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 256,
+    "emailTemplateName": "*KTS New Seller #10.5"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 243,
+    "emailTemplateName": "*KTS New Seller #11"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 248,
+    "emailTemplateName": "*KTS New Seller #11.5"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 253,
+    "emailTemplateName": "*KTS New Seller #12"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 257,
+    "emailTemplateName": "*KTS New Seller #12.5"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 254,
+    "emailTemplateName": "*KTS New Seller #13"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 255,
+    "emailTemplateName": "*KTS New Seller #14"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 244,
+    "emailTemplateName": "*KTS New Seller #15"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 245,
+    "emailTemplateName": "*KTS New Seller #16"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 252,
+    "emailTemplateName": "*KTS New Seller #17"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 47,
+  "name": "*KTS AP New Open House Lead",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 45,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%.This is %sender_name% with %company_name%. Thank you for attending the open house at %inquiry_address%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 259,
+    "emailTemplateName": "*KTS Open House #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 260,
+    "emailTemplateName": "*KTS Open House #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 262,
+    "emailTemplateName": "*KTS Open House #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 261,
+    "emailTemplateName": "*KTS Open House #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 201,
+    "emailTemplateName": "*KTS New Buyer #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 202,
+    "emailTemplateName": "*KTS New Buyer #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 203,
+    "emailTemplateName": "*KTS New Buyer #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 230,
+    "emailTemplateName": "*KTS New Buyer #8.5"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 205,
+    "emailTemplateName": "*KTS New Buyer #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 206,
+    "emailTemplateName": "*KTS New Buyer #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 207,
+    "emailTemplateName": "*KTS New Buyer #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 208,
+    "emailTemplateName": "*KTS New Buyer #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 209,
+    "emailTemplateName": "*KTS New Buyer #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 210,
+    "emailTemplateName": "*KTS New Buyer #15"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 211,
+    "emailTemplateName": "*KTS New Buyer #16"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 212,
+    "emailTemplateName": "*KTS New Buyer #17"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 213,
+    "emailTemplateName": "*KTS New Buyer #18"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 214,
+    "emailTemplateName": "*KTS New Buyer #19"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 215,
+    "emailTemplateName": "*KTS New Buyer #20"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 216,
+    "emailTemplateName": "*KTS New Buyer #21"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 217,
+    "emailTemplateName": "*KTS New Buyer #22"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 218,
+    "emailTemplateName": "*KTS New Buyer #23"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 219,
+    "emailTemplateName": "*KTS New Buyer #24"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 220,
+    "emailTemplateName": "*KTS New Buyer #25"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 221,
+    "emailTemplateName": "*KTS New Buyer #26"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 222,
+    "emailTemplateName": "*KTS New Buyer #27"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 223,
+    "emailTemplateName": "*KTS New Buyer #28"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 224,
+    "emailTemplateName": "*KTS New Buyer #29"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 225,
+    "emailTemplateName": "*KTS New Buyer #30"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 226,
+    "emailTemplateName": "*KTS New Buyer #31"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 227,
+    "emailTemplateName": "*KTS New Buyer #32"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 48,
+  "name": "*KTS AP New Seller - tag seller only",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Seller"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 49,
+  "name": "*KTS AP tag buyer",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 50,
+  "name": "*KTS AP Branded Website - New Form",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 263,
+    "emailTemplateName": "*KTS Branded Website #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 264,
+    "emailTemplateName": "*KTS Branded Website #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 265,
+    "emailTemplateName": "*KTS Branded Website #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 266,
+    "emailTemplateName": "*KTS Branded Website #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 267,
+    "emailTemplateName": "*KTS Branded Website #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 268,
+    "emailTemplateName": "*KTS Branded Website #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 269,
+    "emailTemplateName": "*KTS Branded Website #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 270,
+    "emailTemplateName": "*KTS Branded Website #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 271,
+    "emailTemplateName": "*KTS Branded Website #9"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 272,
+    "emailTemplateName": "*KTS Branded Website #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 273,
+    "emailTemplateName": "*KTS Branded Website #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 274,
+    "emailTemplateName": "*KTS Branded Website #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 275,
+    "emailTemplateName": "*KTS Branded Website #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 276,
+    "emailTemplateName": "*KTS Branded Website #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 51,
+  "name": "*KTS AP New Home Valuation",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 1,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request for a home valuation for %contact_street%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Seller"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 277,
+    "emailTemplateName": "*KTS New Home Value Request Email #1"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 278,
+    "emailTemplateName": "*KTS New Home Value Request Email #2"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 279,
+    "emailTemplateName": "*KTS New Home Value Request Email #3"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 247,
+    "emailTemplateName": "*KTS New Seller #3.5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 235,
+    "emailTemplateName": "*KTS New Seller #4"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 237,
+    "emailTemplateName": "*KTS New Seller #5.5"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 238,
+    "emailTemplateName": "*KTS New Seller #6"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 246,
+    "emailTemplateName": "*KTS New Seller #6.5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 239,
+    "emailTemplateName": "*KTS New Seller #7"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 258,
+    "emailTemplateName": "*KTS New Seller #7.2"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 249,
+    "emailTemplateName": "*KTS New Seller #7.5"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 240,
+    "emailTemplateName": "*KTS New Seller #8"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 251,
+    "emailTemplateName": "*KTS New Seller #8.5"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 241,
+    "emailTemplateName": "*KTS New Seller #9"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 250,
+    "emailTemplateName": "*KTS New Seller #9.5"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 242,
+    "emailTemplateName": "*KTS New Seller #10"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 256,
+    "emailTemplateName": "*KTS New Seller #10.5"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 243,
+    "emailTemplateName": "*KTS New Seller #11"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 248,
+    "emailTemplateName": "*KTS New Seller #11.5"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 253,
+    "emailTemplateName": "*KTS New Seller #12"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 257,
+    "emailTemplateName": "*KTS New Seller #12.5"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 254,
+    "emailTemplateName": "*KTS New Seller #13"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 255,
+    "emailTemplateName": "*KTS New Seller #14"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 244,
+    "emailTemplateName": "*KTS New Seller #15"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 245,
+    "emailTemplateName": "*KTS New Seller #16"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 252,
+    "emailTemplateName": "*KTS New Seller #17"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 52,
+  "name": "*KTS AP New Zillow, Realtor, Trulia",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I received your request from %source_name% for the home at %inquiry_address%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 280,
+    "emailTemplateName": "*KTS ZRT #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 281,
+    "emailTemplateName": "*KTS ZRT #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 282,
+    "emailTemplateName": "*KTS ZRT #3"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 283,
+    "emailTemplateName": "*KTS ZRT #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 284,
+    "emailTemplateName": "*KTS ZRT #5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 285,
+    "emailTemplateName": "*KTS ZRT #6"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 286,
+    "emailTemplateName": "*KTS ZRT #7"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 287,
+    "emailTemplateName": "*KTS ZRT #8"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 288,
+    "emailTemplateName": "*KTS ZRT #9"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 289,
+    "emailTemplateName": "*KTS ZRT #10"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 290,
+    "emailTemplateName": "*KTS ZRT #11"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 291,
+    "emailTemplateName": "*KTS ZRT #12"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 292,
+    "emailTemplateName": "*KTS ZRT #13"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 293,
+    "emailTemplateName": "*KTS ZRT #14"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 294,
+    "emailTemplateName": "*KTS ZRT #15"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 295,
+    "emailTemplateName": "*KTS ZRT #16"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 296,
+    "emailTemplateName": "*KTS ZRT #17"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 297,
+    "emailTemplateName": "*KTS ZRT #18"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 298,
+    "emailTemplateName": "*KTS ZRT #19"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 299,
+    "emailTemplateName": "*KTS ZRT #20"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 300,
+    "emailTemplateName": "*KTS ZRT #21"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 301,
+    "emailTemplateName": "*KTS ZRT #22"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 302,
+    "emailTemplateName": "*KTS ZRT #23"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 303,
+    "emailTemplateName": "*KTS ZRT #24"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 304,
+    "emailTemplateName": "*KTS ZRT #25"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 305,
+    "emailTemplateName": "*KTS ZRT #26"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 306,
+    "emailTemplateName": "*KTS ZRT #27"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 307,
+    "emailTemplateName": "*KTS ZRT #28"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 53,
+  "name": "*KTS AP New Zillow Preferred",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "Hi %contact_first_name%. I received your request from Zillow for the home at %inquiry_address%. Is text ok or would you prefer if I call you? %agent_name%",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 308,
+    "emailTemplateName": "*KTS Zillow Preferred #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 309,
+    "emailTemplateName": "*KTS Zillow Preferred #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 310,
+    "emailTemplateName": "*KTS Zillow Preferred #3"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 311,
+    "emailTemplateName": "*KTS Zillow Preferred #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 312,
+    "emailTemplateName": "*KTS Zillow Preferred #5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 313,
+    "emailTemplateName": "*KTS Zillow Preferred #6"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 314,
+    "emailTemplateName": "*KTS Zillow Preferred #7"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 315,
+    "emailTemplateName": "*KTS Zillow Preferred #8"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 316,
+    "emailTemplateName": "*KTS Zillow Preferred #9"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 317,
+    "emailTemplateName": "*KTS Zillow Preferred #10"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 318,
+    "emailTemplateName": "*KTS Zillow Preferred #11"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 319,
+    "emailTemplateName": "*KTS Zillow Preferred #12"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 320,
+    "emailTemplateName": "*KTS Zillow Preferred #13"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 321,
+    "emailTemplateName": "*KTS Zillow Preferred #14"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 322,
+    "emailTemplateName": "*KTS Zillow Preferred #15"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 323,
+    "emailTemplateName": "*KTS Zillow Preferred #16"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 324,
+    "emailTemplateName": "*KTS Zillow Preferred #17"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 325,
+    "emailTemplateName": "*KTS Zillow Preferred #18"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 326,
+    "emailTemplateName": "*KTS Zillow Preferred #19"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 327,
+    "emailTemplateName": "*KTS ZillowPreferred #20"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 328,
+    "emailTemplateName": "*KTS Zillow Preferred #21"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 329,
+    "emailTemplateName": "*KTS Zillow Preferred #22"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 330,
+    "emailTemplateName": "*KTS Zillow Preferred #23"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 331,
+    "emailTemplateName": "*KTS Zillow Preferred #24"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 332,
+    "emailTemplateName": "*KTS Zillow Preferred #25"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 333,
+    "emailTemplateName": "*KTS Zillow Preferred #26"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 334,
+    "emailTemplateName": "*KTS Zillow Preferred #27"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 335,
+    "emailTemplateName": "*KTS Zillow Preferred #28"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 54,
+  "name": "*KTS AP New Renter",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from %source_name% for the home at %inquiry_address%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 336,
+    "emailTemplateName": "*KTS New Renter #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 337,
+    "emailTemplateName": "*KTS New Renter #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 338,
+    "emailTemplateName": "*KTS New Renter #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 339,
+    "emailTemplateName": "*KTS New Renter #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 340,
+    "emailTemplateName": "*KTS New Renter #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 341,
+    "emailTemplateName": "*KTS New Renter #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 342,
+    "emailTemplateName": "*KTS New Renter #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 343,
+    "emailTemplateName": "*KTS New Renter #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 344,
+    "emailTemplateName": "*KTS New Renter #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 345,
+    "emailTemplateName": "*KTS New Renter #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 346,
+    "emailTemplateName": "*KTS New Renter #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 347,
+    "emailTemplateName": "*KTS New Renter #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 348,
+    "emailTemplateName": "*KTS New Renter #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 349,
+    "emailTemplateName": "*KTS New Renter #15"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 350,
+    "emailTemplateName": "*KTS New Renter #16"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 351,
+    "emailTemplateName": "*KTS New Renter #17"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 352,
+    "emailTemplateName": "*KTS New Renter #18"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 353,
+    "emailTemplateName": "*KTS New Renter #19"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 55,
+  "name": "*KTS AP New Seller Lead - Cash Offer",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 1,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I received your request to review your options for your property. If you'd rather I don't text you, just tell me to stop. Do you prefer a quick transaction, or do you need a bit more time?",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Seller"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 354,
+    "emailTemplateName": "*KTS Barry Jenkins Partnership ZBuyer Email #1"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 357,
+    "emailTemplateName": "*KTS Cash Offer #1"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 358,
+    "emailTemplateName": "*KTS Cash Offer #2"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 359,
+    "emailTemplateName": "*KTS Cash Offer #3"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 355,
+    "emailTemplateName": "*KTS Barry Jenkins Partnership Seller drip email 2"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 356,
+    "emailTemplateName": "*KTS Barry Jenkins Partnership Seller drip email 3"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 360,
+    "emailTemplateName": "*KTS New Seller #1.5"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 233,
+    "emailTemplateName": "*KTS New Seller #2"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 234,
+    "emailTemplateName": "*KTS New Seller #3"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 236,
+    "emailTemplateName": "*KTS New Seller #5"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 237,
+    "emailTemplateName": "*KTS New Seller #5.5"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 238,
+    "emailTemplateName": "*KTS New Seller #6"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 246,
+    "emailTemplateName": "*KTS New Seller #6.5"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 239,
+    "emailTemplateName": "*KTS New Seller #7"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 258,
+    "emailTemplateName": "*KTS New Seller #7.2"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 249,
+    "emailTemplateName": "*KTS New Seller #7.5"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 240,
+    "emailTemplateName": "*KTS New Seller #8"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 251,
+    "emailTemplateName": "*KTS New Seller #8.5"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 241,
+    "emailTemplateName": "*KTS New Seller #9"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 250,
+    "emailTemplateName": "*KTS New Seller #9.5"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 242,
+    "emailTemplateName": "*KTS New Seller #10"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 256,
+    "emailTemplateName": "*KTS New Seller #10.5"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 243,
+    "emailTemplateName": "*KTS New Seller #11"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 253,
+    "emailTemplateName": "*KTS New Seller #12"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 257,
+    "emailTemplateName": "*KTS New Seller #12.5"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 254,
+    "emailTemplateName": "*KTS New Seller #13"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 255,
+    "emailTemplateName": "*KTS New Seller #14"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 244,
+    "emailTemplateName": "*KTS New Seller #15"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 245,
+    "emailTemplateName": "*KTS New Seller #16"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 56,
+  "name": "*KTS AP New Ylopo Direct Connect",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 1440,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your inquiry from my website regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. I will be reaching out ASAP. Is this the best number to reach you on? ",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 361,
+    "emailTemplateName": "*KTS Ylopo Direct Connect #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 264,
+    "emailTemplateName": "*KTS Branded Website #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 266,
+    "emailTemplateName": "*KTS Branded Website #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 267,
+    "emailTemplateName": "*KTS Branded Website #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 268,
+    "emailTemplateName": "*KTS Branded Website #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 269,
+    "emailTemplateName": "*KTS Branded Website #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 270,
+    "emailTemplateName": "*KTS Branded Website #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 271,
+    "emailTemplateName": "*KTS Branded Website #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 272,
+    "emailTemplateName": "*KTS Branded Website #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 273,
+    "emailTemplateName": "*KTS Branded Website #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 274,
+    "emailTemplateName": "*KTS Branded Website #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 275,
+    "emailTemplateName": "*KTS Branded Website #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 276,
+    "emailTemplateName": "*KTS Branded Website #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 57,
+  "name": "*KTS AP Nurture Buyer",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 362,
+    "emailTemplateName": "*KTS Nurture Buyer #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 387,
+    "emailTemplateName": "*KTS Nurture Buyer #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 363,
+    "emailTemplateName": "*KTS Nurture Buyer #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 401,
+    "emailTemplateName": "*KTS Nurture Buyer #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 364,
+    "emailTemplateName": "*KTS Reviews"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 389,
+    "emailTemplateName": "*KTS Nurture Buyer #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 365,
+    "emailTemplateName": "*KTS Nurture Buyer #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 366,
+    "emailTemplateName": "*KTS Nurture Buyer #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 367,
+    "emailTemplateName": "*KTS Nurture Buyer #9"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 390,
+    "emailTemplateName": "*KTS Nurture Buyer #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 368,
+    "emailTemplateName": "*KTS Nurture Buyer #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 369,
+    "emailTemplateName": "*KTS Nurture Buyer #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 392,
+    "emailTemplateName": "*KTS Nurture Buyer #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 397,
+    "emailTemplateName": "*KTS Nurture Buyer #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 394,
+    "emailTemplateName": "*KTS Nurture Buyer #15"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 370,
+    "emailTemplateName": "*KTS Nurture Buyer #16"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 377,
+    "emailTemplateName": "*KTS Nurture Buyer #17"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 371,
+    "emailTemplateName": "*KTS Nurture Buyer #18"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 398,
+    "emailTemplateName": "*KTS Nurture Buyer #19"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 372,
+    "emailTemplateName": "*KTS Nurture Buyer #20"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 376,
+    "emailTemplateName": "*KTS Nurture Buyer #21"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 373,
+    "emailTemplateName": "*KTS Nurture Buyer #22"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 378,
+    "emailTemplateName": "*KTS Nurture Buyer #23"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 374,
+    "emailTemplateName": "*KTS Nurture Buyer #24"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 379,
+    "emailTemplateName": "*KTS Nurture Buyer #25"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 380,
+    "emailTemplateName": "*KTS Nurture Buyer #26"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 381,
+    "emailTemplateName": "*KTS Nurture Buyer #27"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 399,
+    "emailTemplateName": "*KTS Nurture Buyer #28"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 375,
+    "emailTemplateName": "*KTS Nurture Buyer #29"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 382,
+    "emailTemplateName": "*KTS Nurture Buyer #30"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 383,
+    "emailTemplateName": "*KTS Nurture Buyer #31"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 400,
+    "emailTemplateName": "*KTS Nurture Buyer #32"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 384,
+    "emailTemplateName": "*KTS Nurture Buyer #33"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 388,
+    "emailTemplateName": "*KTS Nurture Buyer #34"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 385,
+    "emailTemplateName": "*KTS Nurture Buyer #35"
+   },
+   {
+    "position": 37,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 391,
+    "emailTemplateName": "*KTS Nurture Buyer #36"
+   },
+   {
+    "position": 38,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 386,
+    "emailTemplateName": "*KTS Nurture Buyer #37"
+   },
+   {
+    "position": 39,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 393,
+    "emailTemplateName": "*KTS Nurture Buyer #38"
+   },
+   {
+    "position": 40,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 396,
+    "emailTemplateName": "*KTS Nurture Buyer #39"
+   },
+   {
+    "position": 41,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 395,
+    "emailTemplateName": "*KTS Nurture Buyer #40"
+   }
+  ]
+ },
+ {
+  "key": 58,
+  "name": "*KTS AP Nurture Seller",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 402,
+    "emailTemplateName": "*KTS Nurture Seller #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 364,
+    "emailTemplateName": "*KTS Reviews"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 432,
+    "emailTemplateName": "*KTS Nurture Seller #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 403,
+    "emailTemplateName": "*KTS Nurture Seller #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 404,
+    "emailTemplateName": "*KTS Nurture Seller #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 405,
+    "emailTemplateName": "*KTS Nurture Seller #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 438,
+    "emailTemplateName": "*KTS Nurture Seller #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 406,
+    "emailTemplateName": "*KTS Nurture Seller #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 429,
+    "emailTemplateName": "*KTS Nurture Seller #9"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 407,
+    "emailTemplateName": "*KTS Nurture Seller #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 428,
+    "emailTemplateName": "*KTS Nurture Seller #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 408,
+    "emailTemplateName": "*KTS Nurture Seller #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 439,
+    "emailTemplateName": "*KTS Nurture Seller #12.5"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 417,
+    "emailTemplateName": "*KTS Nurture Seller #13"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 409,
+    "emailTemplateName": "*KTS Nurture Seller #14"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 442,
+    "emailTemplateName": "*KTS Nurture Seller #14.5"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 418,
+    "emailTemplateName": "*KTS Nurture Seller #15"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 410,
+    "emailTemplateName": "*KTS Nurture Seller #16"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 419,
+    "emailTemplateName": "*KTS Nurture Seller #17"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 411,
+    "emailTemplateName": "*KTS Nurture Seller #18"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 440,
+    "emailTemplateName": "*KTS Nurture Seller #18.5"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 420,
+    "emailTemplateName": "*KTS Nurture Seller #19"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 421,
+    "emailTemplateName": "*KTS Nurture Seller #20"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 441,
+    "emailTemplateName": "*KTS Nurture Seller #20.5"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 422,
+    "emailTemplateName": "*KTS Nurture Seller #21"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 412,
+    "emailTemplateName": "*KTS Nurture Seller #22"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 413,
+    "emailTemplateName": "*KTS Nurture Seller #23"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 414,
+    "emailTemplateName": "*KTS Nurture Seller #24"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 415,
+    "emailTemplateName": "*KTS Nurture Seller #25"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 416,
+    "emailTemplateName": "*KTS Nurture Seller #26"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 426,
+    "emailTemplateName": "*KTS Nurture Seller #27"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 423,
+    "emailTemplateName": "*KTS Nurture Seller #28"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 427,
+    "emailTemplateName": "*KTS Nurture Seller #29 - blog"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 424,
+    "emailTemplateName": "*KTS Nurture Seller #30"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 433,
+    "emailTemplateName": "*KTS Nurture Seller #31"
+   },
+   {
+    "position": 37,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 425,
+    "emailTemplateName": "*KTS Nurture Seller #32"
+   },
+   {
+    "position": 38,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 430,
+    "emailTemplateName": "*KTS Nurture Seller #33"
+   },
+   {
+    "position": 39,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 434,
+    "emailTemplateName": "*KTS Nurture Seller #34"
+   },
+   {
+    "position": 40,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 435,
+    "emailTemplateName": "*KTS Nurture Seller #35"
+   },
+   {
+    "position": 41,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 437,
+    "emailTemplateName": "*KTS Nurture Seller #36"
+   },
+   {
+    "position": 42,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 436,
+    "emailTemplateName": "*KTS Nurture Seller #37"
+   },
+   {
+    "position": 43,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 431,
+    "emailTemplateName": "*KTS Nurture Seller #38 - blog"
+   }
+  ]
+ },
+ {
+  "key": 59,
+  "name": "*KTS AP Nurture Buyer + Seller",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 362,
+    "emailTemplateName": "*KTS Nurture Buyer #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 387,
+    "emailTemplateName": "*KTS Nurture Buyer #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 363,
+    "emailTemplateName": "*KTS Nurture Buyer #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 432,
+    "emailTemplateName": "*KTS Nurture Seller #3"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 401,
+    "emailTemplateName": "*KTS Nurture Buyer #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 403,
+    "emailTemplateName": "*KTS Nurture Seller #4"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 364,
+    "emailTemplateName": "*KTS Reviews"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 404,
+    "emailTemplateName": "*KTS Nurture Seller #5"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 405,
+    "emailTemplateName": "*KTS Nurture Seller #6"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 389,
+    "emailTemplateName": "*KTS Nurture Buyer #6"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 438,
+    "emailTemplateName": "*KTS Nurture Seller #7"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 365,
+    "emailTemplateName": "*KTS Nurture Buyer #7"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 366,
+    "emailTemplateName": "*KTS Nurture Buyer #8"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 406,
+    "emailTemplateName": "*KTS Nurture Seller #8"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 367,
+    "emailTemplateName": "*KTS Nurture Buyer #9"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 429,
+    "emailTemplateName": "*KTS Nurture Seller #9"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 390,
+    "emailTemplateName": "*KTS Nurture Buyer #10"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 407,
+    "emailTemplateName": "*KTS Nurture Seller #10"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 368,
+    "emailTemplateName": "*KTS Nurture Buyer #11"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 428,
+    "emailTemplateName": "*KTS Nurture Seller #11"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 369,
+    "emailTemplateName": "*KTS Nurture Buyer #12"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 408,
+    "emailTemplateName": "*KTS Nurture Seller #12"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 439,
+    "emailTemplateName": "*KTS Nurture Seller #12.5"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 417,
+    "emailTemplateName": "*KTS Nurture Seller #13"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 409,
+    "emailTemplateName": "*KTS Nurture Seller #14"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 443,
+    "emailTemplateName": "*KTS Nurture Buyer #14 - blog"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 442,
+    "emailTemplateName": "*KTS Nurture Seller #14.5"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 394,
+    "emailTemplateName": "*KTS Nurture Buyer #15"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 418,
+    "emailTemplateName": "*KTS Nurture Seller #15"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 370,
+    "emailTemplateName": "*KTS Nurture Buyer #16"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 377,
+    "emailTemplateName": "*KTS Nurture Buyer #17"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 419,
+    "emailTemplateName": "*KTS Nurture Seller #17"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 371,
+    "emailTemplateName": "*KTS Nurture Buyer #18"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 440,
+    "emailTemplateName": "*KTS Nurture Seller #18.5"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 444,
+    "emailTemplateName": "*KTS Nurture Buyer #19 - blog"
+   },
+   {
+    "position": 37,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 420,
+    "emailTemplateName": "*KTS Nurture Seller #19"
+   },
+   {
+    "position": 38,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 372,
+    "emailTemplateName": "*KTS Nurture Buyer #20"
+   },
+   {
+    "position": 39,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 421,
+    "emailTemplateName": "*KTS Nurture Seller #20"
+   },
+   {
+    "position": 40,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 441,
+    "emailTemplateName": "*KTS Nurture Seller #20.5"
+   },
+   {
+    "position": 41,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 376,
+    "emailTemplateName": "*KTS Nurture Buyer #21"
+   },
+   {
+    "position": 42,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 422,
+    "emailTemplateName": "*KTS Nurture Seller #21"
+   },
+   {
+    "position": 43,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 373,
+    "emailTemplateName": "*KTS Nurture Buyer #22"
+   },
+   {
+    "position": 44,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 378,
+    "emailTemplateName": "*KTS Nurture Buyer #23"
+   },
+   {
+    "position": 45,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 413,
+    "emailTemplateName": "*KTS Nurture Seller #23"
+   },
+   {
+    "position": 46,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 374,
+    "emailTemplateName": "*KTS Nurture Buyer #24"
+   },
+   {
+    "position": 47,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 414,
+    "emailTemplateName": "*KTS Nurture Seller #24"
+   },
+   {
+    "position": 48,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 379,
+    "emailTemplateName": "*KTS Nurture Buyer #25"
+   },
+   {
+    "position": 49,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 380,
+    "emailTemplateName": "*KTS Nurture Buyer #26"
+   },
+   {
+    "position": 50,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 381,
+    "emailTemplateName": "*KTS Nurture Buyer #27"
+   },
+   {
+    "position": 51,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 423,
+    "emailTemplateName": "*KTS Nurture Seller #28"
+   },
+   {
+    "position": 52,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 445,
+    "emailTemplateName": "*KTS Nurture Buyer #28 - blog"
+   },
+   {
+    "position": 53,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 375,
+    "emailTemplateName": "*KTS Nurture Buyer #29"
+   },
+   {
+    "position": 54,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 424,
+    "emailTemplateName": "*KTS Nurture Seller #30"
+   },
+   {
+    "position": 55,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 382,
+    "emailTemplateName": "*KTS Nurture Buyer #30"
+   },
+   {
+    "position": 56,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 383,
+    "emailTemplateName": "*KTS Nurture Buyer #31"
+   },
+   {
+    "position": 57,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 425,
+    "emailTemplateName": "*KTS Nurture Seller #32"
+   },
+   {
+    "position": 58,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 446,
+    "emailTemplateName": "*KTS Nurture Buyer #32 - blog"
+   },
+   {
+    "position": 59,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 384,
+    "emailTemplateName": "*KTS Nurture Buyer #33"
+   },
+   {
+    "position": 60,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 430,
+    "emailTemplateName": "*KTS Nurture Seller #33"
+   },
+   {
+    "position": 61,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 385,
+    "emailTemplateName": "*KTS Nurture Buyer #35"
+   },
+   {
+    "position": 62,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 391,
+    "emailTemplateName": "*KTS Nurture Buyer #36"
+   },
+   {
+    "position": 63,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 386,
+    "emailTemplateName": "*KTS Nurture Buyer #37"
+   },
+   {
+    "position": 64,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 393,
+    "emailTemplateName": "*KTS Nurture Buyer #38"
+   },
+   {
+    "position": 65,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 396,
+    "emailTemplateName": "*KTS Nurture Buyer #39"
+   },
+   {
+    "position": 66,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 395,
+    "emailTemplateName": "*KTS Nurture Buyer #40"
+   }
+  ]
+ },
+ {
+  "key": 60,
+  "name": "*KTS AP Renter to Future Buyer",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "RENTER"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "NOTEXT"
+    ]
+   },
+   {
+    "position": 4,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 447,
+    "emailTemplateName": "*KTS Renter to Future Buyer #1"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 450,
+    "emailTemplateName": "*KTS Renter to Future Buyer #2"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 120,
+    "action": "sendEmail",
+    "emailTemplateKey": 449,
+    "emailTemplateName": "*KTS Renter to Future Buyer #3"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 95,
+    "action": "sendEmail",
+    "emailTemplateKey": 448,
+    "emailTemplateName": "*KTS Renter to Future Buyer #4 - Barry Jenkins"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 451,
+    "emailTemplateName": "*KTS Renter to Future Buyer #5"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 452,
+    "emailTemplateName": "*KTS Renter to Future Buyer #6"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 461,
+    "emailTemplateName": "*KTS Renter to Future Buyer #7"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 453,
+    "emailTemplateName": "*KTS Renter to Future Buyer #8"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 462,
+    "emailTemplateName": "*KTS Renter to Future Buyer #9"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 454,
+    "emailTemplateName": "*KTS Renter to Future Buyer #10"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 463,
+    "emailTemplateName": "*KTS Renter to Future Buyer #11"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 455,
+    "emailTemplateName": "*KTS Renter to Future Buyer #12"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 464,
+    "emailTemplateName": "*KTS Renter to Future Buyer #13"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 456,
+    "emailTemplateName": "*KTS Renter to Future Buyer #14"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 457,
+    "emailTemplateName": "*KTS Renter to Future Buyer #15"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 465,
+    "emailTemplateName": "*KTS Renter to Future Buyer #16"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 458,
+    "emailTemplateName": "*KTS Renter to Future Buyer #17"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 466,
+    "emailTemplateName": "*KTS Renter to Future Buyer #18"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 459,
+    "emailTemplateName": "*KTS Renter to Future Buyer #19"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 467,
+    "emailTemplateName": "*KTS Renter to Future Buyer #20"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 460,
+    "emailTemplateName": "*KTS Renter to Future Buyer #21"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 468,
+    "emailTemplateName": "*KTS Renter to Future Buyer #22"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 0,
+    "action": "removeTags",
+    "tags": [
+     "RENTER"
+    ]
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 28,
+    "runAfterDays": 1,
+    "action": "addNote",
+    "note": "changing stage from renter to cold to start the nurture buyer drip"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 0,
+    "action": "changeStage",
+    "stage": "C - Cold 6+ Months"
+   }
+  ]
+ },
+ {
+  "key": 61,
+  "name": "*KTS AP Post Closing",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "past client"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 469,
+    "emailTemplateName": "*KTS Post Closing #1"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 6,
+    "action": "sendEmail",
+    "emailTemplateKey": 470,
+    "emailTemplateName": "*KTS Post Closing #2"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 505,
+    "emailTemplateName": "*KTS Post Closing #2.5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 471,
+    "emailTemplateName": "*KTS Post Closing #3"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 504,
+    "emailTemplateName": "*KTS Barry Jenkins Partnership Past Client Closed Drip #1"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 506,
+    "emailTemplateName": "*KTS Post Closing #3.5"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 512,
+    "emailTemplateName": "*KTS Post Closing - intro to helpful home tips"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 472,
+    "emailTemplateName": "*KTS Post Closing #4"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 473,
+    "emailTemplateName": "*KTS Post Closing #5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 507,
+    "emailTemplateName": "*KTS Post Closing #5.5"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 474,
+    "emailTemplateName": "*KTS Post Closing #6"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 475,
+    "emailTemplateName": "*KTS Post Closing #7"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 508,
+    "emailTemplateName": "*KTS Post Closing #7.5"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 476,
+    "emailTemplateName": "*KTS Post Closing #8"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 510,
+    "emailTemplateName": "*KTS Post Closing #8.5"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 477,
+    "emailTemplateName": "*KTS Post Closing #9"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 509,
+    "emailTemplateName": "*KTS Post Closing #9.5"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 478,
+    "emailTemplateName": "*KTS Post Closing #10"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 511,
+    "emailTemplateName": "*KTS Post Closing #10.2"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 519,
+    "emailTemplateName": "*KTS Post Closing #10.5"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 518,
+    "emailTemplateName": "*KTS Post Closing - Equity"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 479,
+    "emailTemplateName": "*KTS Post Closing #11"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 513,
+    "emailTemplateName": "*KTS Post Closing #11.5"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 480,
+    "emailTemplateName": "*KTS Post Closing #12"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 516,
+    "emailTemplateName": "*KTS Post Closing #12.5"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 481,
+    "emailTemplateName": "*KTS Post Closing #13"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 517,
+    "emailTemplateName": "*KTS Post Closing #13.5"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 482,
+    "emailTemplateName": "*KTS Post Closing #14"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 483,
+    "emailTemplateName": "*KTS Post Closing #15"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 484,
+    "emailTemplateName": "*KTS Post Closing #16"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 485,
+    "emailTemplateName": "*KTS Post Closing #17"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 486,
+    "emailTemplateName": "*KTS Post Closing #18"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 487,
+    "emailTemplateName": "*KTS Post Closing #19"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 488,
+    "emailTemplateName": "*KTS Post Closing #20"
+   },
+   {
+    "position": 37,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 489,
+    "emailTemplateName": "*KTS Post Closing #21"
+   },
+   {
+    "position": 38,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 490,
+    "emailTemplateName": "*KTS Post Closing #22"
+   },
+   {
+    "position": 39,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 491,
+    "emailTemplateName": "*KTS Post Closing #23"
+   },
+   {
+    "position": 40,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 492,
+    "emailTemplateName": "*KTS Post Closing #24"
+   },
+   {
+    "position": 41,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 520,
+    "emailTemplateName": "*KTS Post Closing #24.5"
+   },
+   {
+    "position": 42,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 493,
+    "emailTemplateName": "*KTS Post Closing #25"
+   },
+   {
+    "position": 43,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 494,
+    "emailTemplateName": "*KTS Post Closing #26"
+   },
+   {
+    "position": 44,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 495,
+    "emailTemplateName": "*KTS Post Closing #27"
+   },
+   {
+    "position": 45,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 496,
+    "emailTemplateName": "*KTS Post Closing #28"
+   },
+   {
+    "position": 46,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 497,
+    "emailTemplateName": "*KTS Post Closing #29"
+   },
+   {
+    "position": 47,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 498,
+    "emailTemplateName": "*KTS Post Closing #30"
+   },
+   {
+    "position": 48,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 499,
+    "emailTemplateName": "*KTS Post Closing #31"
+   },
+   {
+    "position": 49,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 500,
+    "emailTemplateName": "*KTS Post Closing #32"
+   },
+   {
+    "position": 50,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 501,
+    "emailTemplateName": "*KTS Post Closing #33"
+   },
+   {
+    "position": 51,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 502,
+    "emailTemplateName": "*KTS Post Closing #33.5"
+   },
+   {
+    "position": 52,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 503,
+    "emailTemplateName": "*KTS Post Closing #35"
+   },
+   {
+    "position": 53,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 514,
+    "emailTemplateName": "*KTS Post Closing #36"
+   },
+   {
+    "position": 54,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 515,
+    "emailTemplateName": "*KTS Post Closing #37"
+   }
+  ]
+ },
+ {
+  "key": 62,
+  "name": "*KTS AP Post Closing - Legacy",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "past client"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 471,
+    "emailTemplateName": "*KTS Post Closing #3"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 472,
+    "emailTemplateName": "*KTS Post Closing #4"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 473,
+    "emailTemplateName": "*KTS Post Closing #5"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 507,
+    "emailTemplateName": "*KTS Post Closing #5.5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 474,
+    "emailTemplateName": "*KTS Post Closing #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 475,
+    "emailTemplateName": "*KTS Post Closing #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 508,
+    "emailTemplateName": "*KTS Post Closing #7.5"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 476,
+    "emailTemplateName": "*KTS Post Closing #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 510,
+    "emailTemplateName": "*KTS Post Closing #8.5"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 477,
+    "emailTemplateName": "*KTS Post Closing #9"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 509,
+    "emailTemplateName": "*KTS Post Closing #9.5"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 478,
+    "emailTemplateName": "*KTS Post Closing #10"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 518,
+    "emailTemplateName": "*KTS Post Closing - Equity"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 479,
+    "emailTemplateName": "*KTS Post Closing #11"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 513,
+    "emailTemplateName": "*KTS Post Closing #11.5"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 480,
+    "emailTemplateName": "*KTS Post Closing #12"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 516,
+    "emailTemplateName": "*KTS Post Closing #12.5"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 481,
+    "emailTemplateName": "*KTS Post Closing #13"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 517,
+    "emailTemplateName": "*KTS Post Closing #13.5"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 482,
+    "emailTemplateName": "*KTS Post Closing #14"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 483,
+    "emailTemplateName": "*KTS Post Closing #15"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 484,
+    "emailTemplateName": "*KTS Post Closing #16"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 485,
+    "emailTemplateName": "*KTS Post Closing #17"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 486,
+    "emailTemplateName": "*KTS Post Closing #18"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 487,
+    "emailTemplateName": "*KTS Post Closing #19"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 488,
+    "emailTemplateName": "*KTS Post Closing #20"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 489,
+    "emailTemplateName": "*KTS Post Closing #21"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 490,
+    "emailTemplateName": "*KTS Post Closing #22"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 491,
+    "emailTemplateName": "*KTS Post Closing #23"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 492,
+    "emailTemplateName": "*KTS Post Closing #24"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 493,
+    "emailTemplateName": "*KTS Post Closing #25"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 494,
+    "emailTemplateName": "*KTS Post Closing #26"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 495,
+    "emailTemplateName": "*KTS Post Closing #27"
+   },
+   {
+    "position": 35,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 496,
+    "emailTemplateName": "*KTS Post Closing #28"
+   },
+   {
+    "position": 36,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 497,
+    "emailTemplateName": "*KTS Post Closing #29"
+   },
+   {
+    "position": 37,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 498,
+    "emailTemplateName": "*KTS Post Closing #30"
+   },
+   {
+    "position": 38,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 499,
+    "emailTemplateName": "*KTS Post Closing #31"
+   },
+   {
+    "position": 39,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 500,
+    "emailTemplateName": "*KTS Post Closing #32"
+   },
+   {
+    "position": 40,
+    "runAfterDays": 91,
+    "action": "sendEmail",
+    "emailTemplateKey": 501,
+    "emailTemplateName": "*KTS Post Closing #33"
+   },
+   {
+    "position": 41,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 502,
+    "emailTemplateName": "*KTS Post Closing #33.5"
+   },
+   {
+    "position": 42,
+    "runAfterDays": 92,
+    "action": "sendEmail",
+    "emailTemplateKey": 503,
+    "emailTemplateName": "*KTS Post Closing #35"
+   },
+   {
+    "position": 43,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 514,
+    "emailTemplateName": "*KTS Post Closing #36"
+   },
+   {
+    "position": 44,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 515,
+    "emailTemplateName": "*KTS Post Closing #37"
+   }
+  ]
+ },
+ {
+  "key": 63,
+  "name": "*KTS AP Stale",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 522,
+    "emailTemplateName": "*KTS Stale #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 523,
+    "emailTemplateName": "*KTS Stale #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 524,
+    "emailTemplateName": "*KTS Stale #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 525,
+    "emailTemplateName": "*KTS Stale #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 526,
+    "emailTemplateName": "*KTS Stale #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 527,
+    "emailTemplateName": "*KTS Stale #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 528,
+    "emailTemplateName": "*KTS Stale #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 529,
+    "emailTemplateName": "*KTS Stale #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 530,
+    "emailTemplateName": "*KTS Stale #9"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 531,
+    "emailTemplateName": "*KTS Stale #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 532,
+    "emailTemplateName": "*KTS Stale #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 533,
+    "emailTemplateName": "*KTS Stale #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 534,
+    "emailTemplateName": "*KTS Stale #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 535,
+    "emailTemplateName": "*KTS Stale #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 536,
+    "emailTemplateName": "*KTS Stale #15"
+   }
+  ]
+ },
+ {
+  "key": 64,
+  "name": "*KTS AP Need to know if buyer, seller, buyer/seller, luxury etc.",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "createTask",
+    "taskName": "Add buyer, seller, or buyer/seller or other conditional tag for automation - see cheat sheet",
+    "taskType": "Follow Up"
+   }
+  ]
+ },
+ {
+  "key": 65,
+  "name": "*KTS AP Recent Online Activity",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 537,
+    "emailTemplateName": "*KTS Recent Online Activity #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 538,
+    "emailTemplateName": "*KTS Recent Online Activity #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 539,
+    "emailTemplateName": "*KTS Recent Online Activity #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 540,
+    "emailTemplateName": "*KTS Recent Online Activity #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 541,
+    "emailTemplateName": "*KTS Recent Online Activity #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 542,
+    "emailTemplateName": "*KTS Recent Online Activity #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 543,
+    "emailTemplateName": "*KTS Recent Online Activity #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 544,
+    "emailTemplateName": "*KTS Recent Online Activity #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 545,
+    "emailTemplateName": "*KTS Recent Online Activity #9"
+   }
+  ]
+ },
+ {
+  "key": 66,
+  "name": "*KTS AP Pause action plans",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   }
+  ]
+ },
+ {
+  "key": 67,
+  "name": "*KTS AP Remove Handraiser tag",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 14,
+    "action": "removeTags",
+    "tags": [
+     "handraiser"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 68,
+  "name": "*KTS AP Home Anniversary",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 546,
+    "emailTemplateName": "*KTS Home Anniversary Year 1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 547,
+    "emailTemplateName": "*KTS Home Anniversary Year 2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 548,
+    "emailTemplateName": "*KTS Home Anniversary Year 3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 549,
+    "emailTemplateName": "*KTS Home Anniversary Year 4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 550,
+    "emailTemplateName": "*KTS Home Anniversary Year 5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 551,
+    "emailTemplateName": "*KTS Home Anniversary Year 6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 552,
+    "emailTemplateName": "*KTS Home Anniversary Year 7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 553,
+    "emailTemplateName": "*KTS Home Anniversary Year 8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 554,
+    "emailTemplateName": "*KTS Home Anniversary Year 9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 555,
+    "emailTemplateName": "*KTS Home Anniversary Year 10"
+   }
+  ]
+ },
+ {
+  "key": 69,
+  "name": "*KTS AP Sphere Nurture",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "sphere"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 29,
+    "action": "sendEmail",
+    "emailTemplateKey": 557,
+    "emailTemplateName": "*KTS Sphere Nurture #1"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 558,
+    "emailTemplateName": "*KTS Sphere Nurture #2"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 559,
+    "emailTemplateName": "*KTS Sphere Nurture #3"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 560,
+    "emailTemplateName": "*KTS Sphere Nurture #4"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 561,
+    "emailTemplateName": "*KTS Sphere Nurture #5"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 562,
+    "emailTemplateName": "*KTS Sphere Nurture #6"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 563,
+    "emailTemplateName": "*KTS Sphere Nurture #7"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 564,
+    "emailTemplateName": "*KTS Sphere Nurture #8"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 565,
+    "emailTemplateName": "*KTS Sphere Nurture #9"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 566,
+    "emailTemplateName": "*KTS Sphere Nurture #10"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 567,
+    "emailTemplateName": "*KTS Sphere Nurture #11"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 568,
+    "emailTemplateName": "*KTS Sphere Nurture #12"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 569,
+    "emailTemplateName": "*KTS Sphere Nurture #13"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 570,
+    "emailTemplateName": "*KTS Sphere Nurture #14"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 571,
+    "emailTemplateName": "*KTS Sphere Nurture #15"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 572,
+    "emailTemplateName": "*KTS Sphere Nurture #16"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 573,
+    "emailTemplateName": "*KTS Sphere Nurture #17"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 574,
+    "emailTemplateName": "*KTS Sphere Nurture #18"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 575,
+    "emailTemplateName": "*KTS Sphere Nurture #19"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 576,
+    "emailTemplateName": "*KTS Sphere Nurture #20"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 577,
+    "emailTemplateName": "*KTS Sphere Nurture #21"
+   }
+  ]
+ },
+ {
+  "key": 70,
+  "name": "*KTS AP Change Stage to Archive - Ylopo AI Voice/Ylopo Live",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "changeStage",
+    "stage": "Archive"
+   }
+  ]
+ },
+ {
+  "key": 71,
+  "name": "*KTS AP Change Stage to Warm - Ylopo AI Voice/Ylopo Live",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "changeStage",
+    "stage": "B - Warm 3-6 Months"
+   }
+  ]
+ },
+ {
+  "key": 72,
+  "name": "*KTS AP Raiya Ylopo Call Center Calls Completed",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 89,
+    "action": "addTags",
+    "tags": [
+     "Raiya Ylopo Call Center Calls Completed"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 73,
+  "name": "*KTS AP Ylopo Message Sent",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 578,
+    "emailTemplateName": "*KTS Ylopo Message Sent"
+   }
+  ]
+ },
+ {
+  "key": 74,
+  "name": "*KTS AP Ylopo Private Showing",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 579,
+    "emailTemplateName": "*KTS Ylopo Private Showing #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 580,
+    "emailTemplateName": "*KTS Ylopo Private Showing #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 581,
+    "emailTemplateName": "*KTS Ylopo Private Showing #3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 582,
+    "emailTemplateName": "*KTS Ylopo Private Showing #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 10,
+    "action": "sendEmail",
+    "emailTemplateKey": 583,
+    "emailTemplateName": "*KTS Ylopo Private Showing #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 15,
+    "action": "sendEmail",
+    "emailTemplateKey": 584,
+    "emailTemplateName": "*KTS Ylopo Private Showing #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 585,
+    "emailTemplateName": "*KTS Ylopo Private Showing #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 60,
+    "action": "sendEmail",
+    "emailTemplateKey": 586,
+    "emailTemplateName": "*KTS Ylopo Private Showing #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 90,
+    "action": "sendEmail",
+    "emailTemplateKey": 587,
+    "emailTemplateName": "*KTS Ylopo Private Showing #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 120,
+    "action": "sendEmail",
+    "emailTemplateKey": 588,
+    "emailTemplateName": "*KTS Ylopo Private Showing #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 180,
+    "action": "sendEmail",
+    "emailTemplateKey": 589,
+    "emailTemplateName": "*KTS Ylopo Private Showing #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 210,
+    "action": "sendEmail",
+    "emailTemplateKey": 590,
+    "emailTemplateName": "*KTS Ylopo Private Showing #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 240,
+    "action": "sendEmail",
+    "emailTemplateKey": 591,
+    "emailTemplateName": "*KTS Ylopo Private Showing #13"
+   }
+  ]
+ },
+ {
+  "key": 75,
+  "name": "*KTS AP Tag Removals - Ylopo",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 13,
+    "action": "removeTags",
+    "tags": [
+     "Y_SELLER_CALL_AGENT",
+     "Y_SELLER_EMAIL_AGENT",
+     "Y_SELLER_UNDERSTAND_TREND",
+     "Y_SELLER_LEARN_MORE_EQUITY",
+     "Y_SELLER_REPORT_VIEWED",
+     "Y_SELLER_SELF_GENERATED",
+     "Y_SELLER_REPORT_ENGAGED",
+     "Y_SELLER_TUNE_HOME_VALUE",
+     "Y_SELLER_NEW_HOME_UPGRADES",
+     "Y_SELLER_VIEWED_SIMILAR_LISTINGS",
+     "NURTURE",
+     "Y_SELLER_SEARCH_MORE_PROPERTIES",
+     "Y_SELLER_HEATMAP_INQUIRY",
+     "Y_SELLER_3_VIEW",
+     "Y_SELLER_PRIVATE_SHOWING",
+     "Y_SELLER_SEE_MORE_LISTINGS",
+     "Y_AI_PRIORITY"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 76,
+  "name": "AP Unsubscribed",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "createTask",
+    "taskName": "The lead is unsubscribed. May need to be manually emailed/texted",
+    "taskType": "Follow Up"
+   }
+  ]
+ },
+ {
+  "key": 77,
+  "name": "*KTS AP Automated Valuation Engagement - Ylopo",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 60,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. Thanks for taking a look at my automated home valuation tool. If you'd rather I don't text you, just tell me to stop. I've recently noticed that the program is just a starting point for understanding a home's value.  Would it be helpful to put together a custom report for you and send it over as soon as possible? \n\nP.s. My assistant may have already reached out, but I wanted to talk to you soon.",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopOtherPlans"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Seller"
+    ]
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 592,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 1"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 607,
+    "emailTemplateName": "*KTS Automated Valuation 1.5"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 593,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 2"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 606,
+    "emailTemplateName": "*KTS Automation Home Valuation 2.5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 594,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 3"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 247,
+    "emailTemplateName": "*KTS New Seller #3.5"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 595,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 4"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 596,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 5"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 597,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 6"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 598,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 7"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 258,
+    "emailTemplateName": "*KTS New Seller #7.2"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 599,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 8"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 251,
+    "emailTemplateName": "*KTS New Seller #8.5"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 600,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 9"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 250,
+    "emailTemplateName": "*KTS New Seller #9.5"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 601,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 10"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 256,
+    "emailTemplateName": "*KTS New Seller #10.5"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 602,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 11"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 603,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 12"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 257,
+    "emailTemplateName": "*KTS New Seller #12.5"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 604,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 13"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 605,
+    "emailTemplateName": "*KTS Automated Valuation Engagement 14"
+   }
+  ]
+ },
+ {
+  "key": 78,
+  "name": "*KTS AP Remove Automated Valuation tag",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 14,
+    "action": "removeTags",
+    "tags": [
+     "HOMEBOT_ENGAGED",
+     "RealScout HVA Viewed",
+     "CONTACT DASHBOARD VIEW"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 79,
+  "name": "*KTS AP Happy Birthday",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 608,
+    "emailTemplateName": "*KTS Happy Birthday #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 609,
+    "emailTemplateName": "*KTS Happy Birthday #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 610,
+    "emailTemplateName": "*KTS Happy Birthday #3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 611,
+    "emailTemplateName": "*KTS Happy Birthday #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 612,
+    "emailTemplateName": "*KTS Happy Birthday #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 613,
+    "emailTemplateName": "*KTS Happy Birthday #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 614,
+    "emailTemplateName": "*KTS Happy Birthday #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 615,
+    "emailTemplateName": "*KTS Happy Birthday #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 616,
+    "emailTemplateName": "*KTS Happy Birthday #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 617,
+    "emailTemplateName": "*KTS Happy Birthday #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 618,
+    "emailTemplateName": "*KTS Happy Birthday #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 619,
+    "emailTemplateName": "*KTS Happy Birthday #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 620,
+    "emailTemplateName": "*KTS Happy Birthday #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 621,
+    "emailTemplateName": "*KTS Happy Birthday #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 622,
+    "emailTemplateName": "*KTS Happy Birthday #15"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 623,
+    "emailTemplateName": "*KTS Happy Birthday #16"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 624,
+    "emailTemplateName": "*KTS Happy Birthday #17"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 625,
+    "emailTemplateName": "*KTS Happy Birthday #18"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 626,
+    "emailTemplateName": "*KTS Happy Birthday #19"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 627,
+    "emailTemplateName": "*KTS Happy Birthday #20"
+   }
+  ]
+ },
+ {
+  "key": 80,
+  "name": "*KTS AP Happy Birthday - Relationship",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 608,
+    "emailTemplateName": "*KTS Happy Birthday #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 609,
+    "emailTemplateName": "*KTS Happy Birthday #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 610,
+    "emailTemplateName": "*KTS Happy Birthday #3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 611,
+    "emailTemplateName": "*KTS Happy Birthday #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 612,
+    "emailTemplateName": "*KTS Happy Birthday #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 613,
+    "emailTemplateName": "*KTS Happy Birthday #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 614,
+    "emailTemplateName": "*KTS Happy Birthday #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 615,
+    "emailTemplateName": "*KTS Happy Birthday #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 616,
+    "emailTemplateName": "*KTS Happy Birthday #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 617,
+    "emailTemplateName": "*KTS Happy Birthday #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 618,
+    "emailTemplateName": "*KTS Happy Birthday #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 619,
+    "emailTemplateName": "*KTS Happy Birthday #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 620,
+    "emailTemplateName": "*KTS Happy Birthday #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 621,
+    "emailTemplateName": "*KTS Happy Birthday #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 622,
+    "emailTemplateName": "*KTS Happy Birthday #15"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 623,
+    "emailTemplateName": "*KTS Happy Birthday #16"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 624,
+    "emailTemplateName": "*KTS Happy Birthday #17"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 625,
+    "emailTemplateName": "*KTS Happy Birthday #18"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 626,
+    "emailTemplateName": "*KTS Happy Birthday #19"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 365,
+    "action": "sendEmail",
+    "emailTemplateKey": 627,
+    "emailTemplateName": "*KTS Happy Birthday #20"
+   }
+  ]
+ },
+ {
+  "key": 81,
+  "name": "*KTS AP New Open House Lead - Manual",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 45,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%.This is %sender_name% with %company_name%. Thank you for attending the open house at %inquiry_address%. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "Buyer"
+    ]
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 628,
+    "emailTemplateName": "*KTS Open House #1 - Manual"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 260,
+    "emailTemplateName": "*KTS Open House #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 262,
+    "emailTemplateName": "*KTS Open House #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 261,
+    "emailTemplateName": "*KTS Open House #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 201,
+    "emailTemplateName": "*KTS New Buyer #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 202,
+    "emailTemplateName": "*KTS New Buyer #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 203,
+    "emailTemplateName": "*KTS New Buyer #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 230,
+    "emailTemplateName": "*KTS New Buyer #8.5"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 205,
+    "emailTemplateName": "*KTS New Buyer #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 206,
+    "emailTemplateName": "*KTS New Buyer #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 207,
+    "emailTemplateName": "*KTS New Buyer #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 208,
+    "emailTemplateName": "*KTS New Buyer #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 209,
+    "emailTemplateName": "*KTS New Buyer #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 210,
+    "emailTemplateName": "*KTS New Buyer #15"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 211,
+    "emailTemplateName": "*KTS New Buyer #16"
+   },
+   {
+    "position": 18,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 212,
+    "emailTemplateName": "*KTS New Buyer #17"
+   },
+   {
+    "position": 19,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 213,
+    "emailTemplateName": "*KTS New Buyer #18"
+   },
+   {
+    "position": 20,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 214,
+    "emailTemplateName": "*KTS New Buyer #19"
+   },
+   {
+    "position": 21,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 215,
+    "emailTemplateName": "*KTS New Buyer #20"
+   },
+   {
+    "position": 22,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 216,
+    "emailTemplateName": "*KTS New Buyer #21"
+   },
+   {
+    "position": 23,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 217,
+    "emailTemplateName": "*KTS New Buyer #22"
+   },
+   {
+    "position": 24,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 218,
+    "emailTemplateName": "*KTS New Buyer #23"
+   },
+   {
+    "position": 25,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 219,
+    "emailTemplateName": "*KTS New Buyer #24"
+   },
+   {
+    "position": 26,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 220,
+    "emailTemplateName": "*KTS New Buyer #25"
+   },
+   {
+    "position": 27,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 221,
+    "emailTemplateName": "*KTS New Buyer #26"
+   },
+   {
+    "position": 28,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 222,
+    "emailTemplateName": "*KTS New Buyer #27"
+   },
+   {
+    "position": 29,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 223,
+    "emailTemplateName": "*KTS New Buyer #28"
+   },
+   {
+    "position": 30,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 224,
+    "emailTemplateName": "*KTS New Buyer #29"
+   },
+   {
+    "position": 31,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 225,
+    "emailTemplateName": "*KTS New Buyer #30"
+   },
+   {
+    "position": 32,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 226,
+    "emailTemplateName": "*KTS New Buyer #31"
+   },
+   {
+    "position": 33,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 227,
+    "emailTemplateName": "*KTS New Buyer #32"
+   },
+   {
+    "position": 34,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": 82,
+  "name": "*KTS AP New Open House Lead - Manual - Task",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "createTask",
+    "taskName": "Open house automation didn’t start, because open house custom field is empty, please put in the address and then restart automation again",
+    "taskType": "Follow Up"
+   }
+  ]
+ },
+ {
+  "key": 83,
+  "name": "*KTS AP Home Anniversary - Agnostic",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 629,
+    "emailTemplateName": "*KTS Home Anniversary 1- no year"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 630,
+    "emailTemplateName": "*KTS Home Anniversary 2-no year"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 631,
+    "emailTemplateName": "*KTS Home Anniversary 3-no year"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 632,
+    "emailTemplateName": "*KTS Home Anniversary 4-no year"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 633,
+    "emailTemplateName": "*KTS Home Anniversary 5-no year"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 634,
+    "emailTemplateName": "*KTS Home Anniversary 6-no year"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 635,
+    "emailTemplateName": "*KTS Home Anniversary 7-no year"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 636,
+    "emailTemplateName": "*KTS Home Anniversary 8-no year"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 637,
+    "emailTemplateName": "*KTS Home Anniversary 9-no year"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 364,
+    "action": "sendEmail",
+    "emailTemplateKey": 638,
+    "emailTemplateName": "*KTS Home Anniversary 10-no year"
+   }
+  ]
+ },
+ {
+  "key": 84,
+  "name": "*KTS AP Buyer Active",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 640,
+    "emailTemplateName": "*KTS Active Buyer #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 639,
+    "emailTemplateName": "*KTS Active Buyer #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 641,
+    "emailTemplateName": "*KTS Active Buyer #3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 642,
+    "emailTemplateName": "*KTS Active Buyer #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 649,
+    "emailTemplateName": "*KTS Active Buyer #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 643,
+    "emailTemplateName": "*KTS Active Buyer #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 644,
+    "emailTemplateName": "*KTS Active Buyer #7"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 645,
+    "emailTemplateName": "*KTS Active Buyer #8"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 646,
+    "emailTemplateName": "*KTS Active Buyer #9"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 647,
+    "emailTemplateName": "*KTS Active Buyer #10"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 648,
+    "emailTemplateName": "*KTS Active Buyer #11"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 650,
+    "emailTemplateName": "*KTS Active Buyer #12"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 651,
+    "emailTemplateName": "*KTS Active Buyer #13"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 652,
+    "emailTemplateName": "*KTS Active Buyer #14"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 653,
+    "emailTemplateName": "*KTS Active Buyer #15"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 654,
+    "emailTemplateName": "*KTS Active Buyer #16"
+   },
+   {
+    "position": 17,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 655,
+    "emailTemplateName": "*KTS Active Buyer #17"
+   }
+  ]
+ },
+ {
+  "key": 85,
+  "name": "*KTS AP Buyer Pending",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopPlan",
+    "stopPlanKey": 84
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 656,
+    "emailTemplateName": "*KTS Offer Accepted #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 657,
+    "emailTemplateName": "*KTS Offer Accepted #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 658,
+    "emailTemplateName": "*KTS Offer Accepted #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 659,
+    "emailTemplateName": "*KTS Offer Accepted #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 667,
+    "emailTemplateName": "*KTS Offer Accepted #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 660,
+    "emailTemplateName": "*KTS Pending Buyer #1"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 661,
+    "emailTemplateName": "*KTS Pending Buyer #2"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 662,
+    "emailTemplateName": "*KTS Pending Buyer #3"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 663,
+    "emailTemplateName": "*KTS Pending Buyer #4"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 664,
+    "emailTemplateName": "*KTS Pending Buyer #5"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 666,
+    "emailTemplateName": "*KTS Pending Buyer #6"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 668,
+    "emailTemplateName": "*KTS Pending Buyer #7"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 669,
+    "emailTemplateName": "*KTS Pending Buyer #8"
+   }
+  ]
+ },
+ {
+  "key": 86,
+  "name": "*KTS AP Seller Listed",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopPlan",
+    "stopPlanKey": 88
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 671,
+    "emailTemplateName": "*KTS Seller Listed #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 673,
+    "emailTemplateName": "*KTS Seller Listed #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 674,
+    "emailTemplateName": "*KTS Seller Listed #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 672,
+    "emailTemplateName": "*KTS Seller Listed #4"
+   }
+  ]
+ },
+ {
+  "key": 87,
+  "name": "*KTS AP Seller Pending",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "stopPlan",
+    "stopPlanKey": 86
+   },
+   {
+    "position": 2,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 675,
+    "emailTemplateName": "*KTS Seller Pending #1"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 1,
+    "action": "sendEmail",
+    "emailTemplateKey": 682,
+    "emailTemplateName": "*KTS Seller Pending #2"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 676,
+    "emailTemplateName": "*KTS Seller Pending #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 680,
+    "emailTemplateName": "*KTS Seller Pending #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 677,
+    "emailTemplateName": "*KTS Seller Pending #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 681,
+    "emailTemplateName": "*KTS Seller Pending #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 678,
+    "emailTemplateName": "*KTS Seller Pending #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 679,
+    "emailTemplateName": "*KTS Seller Pending #8"
+   }
+  ]
+ },
+ {
+  "key": 88,
+  "name": "*KTS AP Seller Pre-Listed",
+  "stopOnContacted": false,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": false,
+  "initialTextMessage": "",
+  "usedByLeadFlowInOriginal": false,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 683,
+    "emailTemplateName": "*KTS Seller Pre-Listed #1"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 684,
+    "emailTemplateName": "*KTS Seller Pre-Listed #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 685,
+    "emailTemplateName": "*KTS Seller Pre-Listed #3"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 4,
+    "action": "sendEmail",
+    "emailTemplateKey": 688,
+    "emailTemplateName": "*KTS Seller Pre-Listed #4"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 689,
+    "emailTemplateName": "*KTS Seller Pre-Listed #5"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 690,
+    "emailTemplateName": "*KTS Seller Pre-Listed #6"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 5,
+    "action": "sendEmail",
+    "emailTemplateKey": 691,
+    "emailTemplateName": "*KTS Seller Pre-Listed #7"
+   }
+  ]
+ },
+ {
+  "key": 89,
+  "name": "*KTS AP Branded Website - Realtor.com",
+  "stopOnContacted": true,
+  "delaySmsMinutes": 0,
+  "initialTextMessageEnabled": true,
+  "initialTextMessage": "Hi %contact_first_name%. This is %sender_name% with %company_name%. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
+  "usedByLeadFlowInOriginal": true,
+  "steps": [
+   {
+    "position": 1,
+    "runAfterDays": 0,
+    "action": "sendEmail",
+    "emailTemplateKey": 692,
+    "emailTemplateName": "*KTS Branded Website #1 Realtor.com"
+   },
+   {
+    "position": 2,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 264,
+    "emailTemplateName": "*KTS Branded Website #2"
+   },
+   {
+    "position": 3,
+    "runAfterDays": 2,
+    "action": "sendEmail",
+    "emailTemplateKey": 228,
+    "emailTemplateName": "*KTS About Page"
+   },
+   {
+    "position": 4,
+    "runAfterDays": 3,
+    "action": "sendEmail",
+    "emailTemplateKey": 265,
+    "emailTemplateName": "*KTS Branded Website #3"
+   },
+   {
+    "position": 5,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 266,
+    "emailTemplateName": "*KTS Branded Website #4"
+   },
+   {
+    "position": 6,
+    "runAfterDays": 7,
+    "action": "sendEmail",
+    "emailTemplateKey": 267,
+    "emailTemplateName": "*KTS Branded Website #5"
+   },
+   {
+    "position": 7,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 268,
+    "emailTemplateName": "*KTS Branded Website #6"
+   },
+   {
+    "position": 8,
+    "runAfterDays": 14,
+    "action": "sendEmail",
+    "emailTemplateKey": 269,
+    "emailTemplateName": "*KTS Branded Website #7"
+   },
+   {
+    "position": 9,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 270,
+    "emailTemplateName": "*KTS Branded Website #8"
+   },
+   {
+    "position": 10,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 271,
+    "emailTemplateName": "*KTS Branded Website #9"
+   },
+   {
+    "position": 11,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 272,
+    "emailTemplateName": "*KTS Branded Website #10"
+   },
+   {
+    "position": 12,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 273,
+    "emailTemplateName": "*KTS Branded Website #11"
+   },
+   {
+    "position": 13,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 274,
+    "emailTemplateName": "*KTS Branded Website #12"
+   },
+   {
+    "position": 14,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 275,
+    "emailTemplateName": "*KTS Branded Website #13"
+   },
+   {
+    "position": 15,
+    "runAfterDays": 30,
+    "action": "sendEmail",
+    "emailTemplateKey": 276,
+    "emailTemplateName": "*KTS Branded Website #14"
+   },
+   {
+    "position": 16,
+    "runAfterDays": 0,
+    "action": "addTags",
+    "tags": [
+     "unresponsive"
+    ]
+   }
+  ]
+ }
+]

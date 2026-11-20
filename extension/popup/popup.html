@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FUB to Lofty Migrator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>KTS drips → Lofty</h1>
+
+    <!-- Step 1: FUB API Key -->
+    <section id="fub-config" class="section" style="display:none">
+      <h2>1. Follow Up Boss</h2>
+      <div class="input-group">
+        <input type="password" id="fub-api-key" placeholder="FUB API Key">
+        <button id="save-fub-key">Save</button>
+      </div>
+      <div id="fub-status" class="status"></div>
+    </section>
+
+    <!-- Step 2: Lofty Connection -->
+    <section id="lofty-config" class="section">
+      <h2>1. Lofty connection</h2>
+      <p class="hint">Make sure you're logged into <a href="https://crm.lofty.com" target="_blank">crm.lofty.com</a></p>
+      <button id="check-lofty">Check Connection</button>
+      <button style="display:none" id="test-lofty-api" class="secondary">Test API</button>
+      <button style="display:none" id="create-test-plan" class="primary">Create Test Smart Plan</button>
+      <button style="display:none" id="debug-info" class="secondary">Debug</button>
+      <button style="display:none" id="analyze-sig" class="secondary">Analyze Sig</button>
+      <div id="lofty-status" class="status"></div>
+      <pre id="debug-output" style="display:none; background:#1e1e1e; color:#0f0; padding:8px; font-size:10px; max-height:200px; overflow:auto; margin-top:8px; border-radius:4px;"></pre>
+
+      <!-- Script Search Section -->
+      <div id="script-search-section" style="display:none; margin-top:10px; padding:10px; background:#1a3a1a; border-radius:4px; border:1px solid #2a5a2a;">
+        <h4 style="margin:0 0 8px 0; font-size:12px; color:#4ade80;">🔍 Auto-Find Signature Algorithm</h4>
+        <p style="font-size:10px; color:#888; margin:0 0 8px 0;">Searches all Lofty JS files for the signing code:</p>
+        <button id="search-scripts" class="primary" style="background:#22c55e; margin-bottom:8px;">Search All Scripts</button>
+        <div id="search-status" style="font-size:10px; color:#888;"></div>
+        <pre id="search-results" style="display:none; background:#1e1e1e; color:#4ade80; padding:8px; font-size:9px; max-height:300px; overflow:auto; margin-top:8px;"></pre>
+      </div>
+
+      <!-- Signature capture section -->
+      <div id="sig-test-section" style="display:none; margin-top:10px; padding:10px; background:#2a2a2a; border-radius:4px;">
+        <h4 style="margin:0 0 8px 0; font-size:12px;">Captured Signature Data</h4>
+        <p style="font-size:10px; color:#888; margin:0 0 8px 0;">Click "Capture" to auto-fill from Lofty's requests:</p>
+        <button id="capture-sig" class="small" style="margin-bottom:8px; background:#4a9eff;">Capture from Lofty</button>
+        <div style="margin-bottom:4px;">
+          <label style="font-size:10px; color:#aaa;">_T Cookie:</label>
+          <input type="text" id="sig-token" placeholder="Will be captured automatically" style="width:100%; padding:4px; font-size:10px; background:#1a1a1a; color:#0f0; border:1px solid #444;">
+        </div>
+        <div style="margin-bottom:4px;">
+          <label style="font-size:10px; color:#aaa;">Timestamp:</label>
+          <input type="text" id="sig-timestamp" placeholder="Will be captured automatically" style="width:100%; padding:4px; font-size:10px; background:#1a1a1a; color:#0f0; border:1px solid #444;">
+        </div>
+        <div style="margin-bottom:4px;">
+          <label style="font-size:10px; color:#aaa;">Expected Signature:</label>
+          <input type="text" id="sig-expected" placeholder="Will be captured automatically" style="width:100%; padding:4px; font-size:10px; background:#1a1a1a; color:#0f0; border:1px solid #444;">
+        </div>
+        <button id="test-sig-algo" class="small">Test Algorithms</button>
+        <div id="capture-status" style="font-size:10px; color:#888; margin-top:4px;"></div>
+        <pre id="sig-test-result" style="display:none; background:#1e1e1e; color:#0f0; padding:8px; font-size:9px; max-height:200px; overflow:auto; margin-top:8px;"></pre>
+      </div>
+    </section>
+
+    <!-- Step 2.5: Tag Sync -->
+    <section id="tag-sync" class="section">
+      <h2>2. Tags</h2>
+      <p class="hint">Shows which tags the drips need and which your Lofty already has. Creating tags adds them for your whole Lofty team, so ask your team lead first if you are on a team.</p>
+      <div class="tag-sync-buttons">
+        <button id="analyze-tags" class="secondary">Check tags</button>
+        <button id="sync-tags" class="primary" disabled>Create missing tags</button>
+      </div>
+      <div id="tag-sync-status" class="status"></div>
+      <div id="tag-sync-progress" style="display:none;">
+        <div id="tag-progress-bar"><div id="tag-progress-fill"></div></div>
+        <div id="tag-progress-text"></div>
+      </div>
+      <div id="tag-results" style="display:none; margin-top:10px; padding:10px; background:#1e1e1e; border-radius:4px; max-height:200px; overflow:auto;">
+        <div id="tag-summary" style="margin-bottom:8px; font-size:11px;"></div>
+        <div id="tag-list" style="font-size:10px; color:#888;"></div>
+      </div>
+    </section>
+
+    <!-- Step 3: Select Plans -->
+    <section id="plan-selection" class="section">
+      <h2>3. Pick drips</h2>
+      <button id="fetch-plans" style="display:none">Fetch FUB Plans</button>
+      <div id="plans-container">
+        <div id="plans-list"></div>
+        <div class="select-controls">
+          <button id="select-all" class="small">Select All</button>
+          <button id="select-none" class="small">Select None</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 4: Migrate -->
+    <section id="migration" class="section">
+      <h2>4. Upload</h2>
+      <div style="margin-bottom:8px;font-size:11px;color:#aaa;">Plans upload as drafts. To list only the tags the ticked plans need, tick plans before Check tags. <a href="#" id="forget-history" style="color:#8ab4f8;">Forget upload history</a></div>
+      <label style="display:none"><input type="checkbox" id="include-first-texts"> Add each new-lead drip's first text as step 1 (automatic text: only for leads who agreed to texts)</label>
+      <div class="destination-selector" style="margin-bottom: 12px;">
+        <label style="font-size: 12px; color: #aaa; margin-right: 8px;">Destination:</label>
+        <select id="destination-select" style="padding: 6px 12px; border-radius: 4px; background: #2a2a2a; color: #fff; border: 1px solid #444;">
+          <option value="personal" selected>Personal (Private)</option>
+          <option value="company">Company (Shared)</option>
+        </select>
+      </div>
+      <button id="start-migration" class="primary" disabled>Upload to Lofty</button>
+      <div id="progress-container">
+        <div id="progress-bar"><div id="progress-fill"></div></div>
+        <div id="progress-text"></div>
+      </div>
+    </section>
+
+    <!-- Log -->
+    <section id="log-section" class="section">
+      <h2>Log</h2>
+      <div id="log"></div>
+    </section>
+  </div>
+
+  <script src="../services/fub-client.js"></script>
+  <script src="../services/lofty-client.js"></script>
+  <script src="../services/converter.js"></script>
+  <script src="../services/converter-v2.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
