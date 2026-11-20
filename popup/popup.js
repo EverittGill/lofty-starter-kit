@@ -154,7 +154,7 @@ async function loadDetails() {
     agentDetails = { website, brokerage: v('d-brokerage'), about: link(v('d-about')), reviews: link(v('d-reviews')) };
     await chrome.storage.local.set({ agentDetails });
     applyDetails();
-    setStatus(st, 'Saved', 'success');
+    setStatus(st, agentDetails.reviews ? 'Saved' : 'Saved. No Google review link: the two emails that ask for a review will link to your website instead.', 'success');
   });
 }
 
@@ -256,9 +256,15 @@ async function checkLoftyConnection() {
   const result = await loftyClient.testConnection();
 
   if (result.success) {
-    const userDisplay = result.userId !== 'unknown' ? `User: ${result.userId}` : 'Session found';
-    setStatus(elements.loftyStatus, `Connected (${userDisplay})`, 'success');
-    log(`Lofty connected! Auth token: ${result.hasAuthToken ? 'yes' : 'no'}, Session token: ${result.hasToken ? 'yes' : 'no'}`, 'success');
+    try {
+      loftyClient.account = null;
+      await loftyClient.getAccount(); // proves the Lofty tab is open, logged in and answering
+      setStatus(elements.loftyStatus, 'Connected to your Lofty account', 'success');
+      log('Lofty connected.', 'success');
+    } catch (e) {
+      setStatus(elements.loftyStatus, 'Not connected. Open crm.lofty.com in another tab, log in, then press Check Connection.', 'error');
+      log(`Lofty connection failed: ${e.message}`, 'error');
+    }
   } else {
     setStatus(elements.loftyStatus, `Error: ${result.error}`, 'error');
     log(`Lofty connection failed: ${result.error}`, 'error');
@@ -1189,6 +1195,9 @@ async function startMigration() {
   // Get selected plans from local data (no FUB API needed!)
   const uploaded = (await chrome.storage.local.get(['uploadedPlans'])).uploadedPlans || {};
   const handNotes = [];
+  let histKey = '';
+  try { const acct = await loftyClient.getAccount(); histKey = `${acct.teamId || ''}/${acct.userId || ''}/`; }
+  catch (e) { log(`Could not read your Lofty account: ${e.message}`, 'error'); elements.startMigration.disabled = false; return; }
   const selectedPlans = actionPlans.filter(plan => planIds.includes(plan.id));
   log(`Found ${selectedPlans.length} plans in local data`, 'info');
 
@@ -1209,14 +1218,14 @@ async function startMigration() {
       }
 
       if (triggerConfig.type === 'missing') {
-        throw new Error(`Your Lofty account has no ${triggerConfig.what}. Create it (Tags: Analyze, then Create missing tags; pipeline stages in Lofty settings), then migrate this plan again.`);
+        throw new Error(`Your Lofty account has no ${triggerConfig.what}. Press Check tags, then Create missing tags, and upload this drip again.`);
       }
       const missingTags = missingStepTags(fubPlan);
       if (missingTags.length) {
-        throw new Error(`Steps use tag(s) your Lofty account doesn't have: ${missingTags.join(', ')}. Use Tags: Analyze, then Create missing tags, and migrate again.`);
+        throw new Error(`Steps use tag(s) your Lofty account doesn't have: ${missingTags.join(', ')}. Press Check tags, then Create missing tags, and upload again.`);
       }
-      if (uploaded[fubPlan.name]) {
-        log(`Skipping "${fubPlan.name}": already uploaded from this browser on ${uploaded[fubPlan.name]}. Delete it in Lofty and click "Forget upload history" to upload it again.`, 'info');
+      if (uploaded[histKey + fubPlan.name]) {
+        log(`Skipping "${fubPlan.name}": already uploaded from this browser on ${uploaded[histKey + fubPlan.name]}. Delete it in Lofty and click "Forget upload history" to upload it again.`, 'info');
         continue;
       }
 
@@ -1225,7 +1234,7 @@ async function startMigration() {
 
       // Convert to Lofty format with proper trigger
       const includeTexts = !!document.getElementById('include-first-texts')?.checked;
-      const convOpts = { accessFlag, pauseOnReply: !!fubPlan.pauseOnReply, firstText: includeTexts, keepOnStageChange: !!fubPlan.trigger?.keepOnStageChange };
+      const convOpts = { accessFlag, pauseOnReply: !!fubPlan.pauseOnReply, pauseOnStageChange: !!fubPlan.pauseOnStageChange };
       const loftyAccount = await loftyClient.getAccount();
       let built = ConverterV2.build(fubPlan, triggerConfig, convOpts, loftyAccount);
       loftyPayload = built.payload;
@@ -1248,7 +1257,7 @@ async function startMigration() {
       try {
         await loftyClient.createSmartPlanV2(built, progress);
       } catch (firstError) {
-        if (!triggerConfig.experimental) throw firstError;
+        if (!triggerConfig.experimental || !firstError.atSave) throw firstError;
         log(`Lofty refused "${fubPlan.name}" with its trigger (${firstError.message}). Uploading it with no trigger instead.`, 'info');
         built = ConverterV2.build(fubPlan, { type: 'manual' }, convOpts, loftyAccount);
         loftyPayload = built.payload;
@@ -1266,11 +1275,16 @@ async function startMigration() {
       for (const n of fubPlan.finishNotes || []) fin.push(n);
       const taskAt = (fubPlan.steps || []).findIndex(st => st.action === 'createTask' || st.action === 'addNote');
       if (taskAt !== -1) fin.push(`Has a task step (step ${taskAt + 1}). In Lofty a task holds the plan until it is marked complete.`);
-      if (fin.length) handNotes.push(`${fubPlan.name}\n   - ${fin.join('\n   - ')}`);
+      if (fin.length) {
+        const note = `${fubPlan.name}\n   - ${fin.join('\n   - ')}`;
+        handNotes.push(note);
+        const prevList = (await chrome.storage.local.get(['finishList'])).finishList;
+        await chrome.storage.local.set({ finishList: (prevList ? prevList + '\n\n' : 'TO FINISH IN LOFTY\n\n') + note });
+      }
 
-      log(`Migrated: ${fubPlan.name}`, 'success');
+      log(`Uploaded: ${fubPlan.name}`, 'success');
       successCount++;
-      uploaded[fubPlan.name] = new Date().toLocaleDateString();
+      uploaded[histKey + fubPlan.name] = new Date().toLocaleDateString();
       await chrome.storage.local.set({ uploadedPlans: uploaded });
     } catch (error) {
       // Comprehensive error logging
@@ -1336,7 +1350,7 @@ async function startMigration() {
     // Update progress
     const pct = Math.round(((i + 1) / selectedPlans.length) * 100);
     elements.progressFill.style.width = `${pct}%`;
-    elements.progressText.textContent = `Migrating ${i + 1} of ${selectedPlans.length}...`;
+    elements.progressText.textContent = `Uploading ${i + 1} of ${selectedPlans.length}...`;
 
     // Small delay between uploads
     await new Promise(r => setTimeout(r, 500));
@@ -1345,15 +1359,13 @@ async function startMigration() {
   // Done - show summary
   elements.progressFill.style.width = '100%';
   elements.progressText.textContent = `Done! ${successCount} succeeded, ${failCount} failed`;
-  log(`Migration complete: ${successCount} succeeded, ${failCount} failed`, successCount > 0 ? 'success' : 'error');
+  log(`Upload finished: ${successCount} uploaded, ${failCount} failed`, successCount > 0 ? 'success' : 'error');
 
   // What still has to be set by hand in Lofty
   if (handNotes.length > 0) {
     log(`=== TO FINISH IN LOFTY (${handNotes.length}) ===`, 'info');
     handNotes.forEach(n => log(n, 'info'));
-    const prev = (await chrome.storage.local.get(['finishList'])).finishList;
-    const all = (prev ? prev + '\n\n' : 'TO FINISH IN LOFTY\n\n') + handNotes.join('\n\n');
-    await chrome.storage.local.set({ finishList: all });
+    const all = (await chrome.storage.local.get(['finishList'])).finishList || '';
     elements.debugOutput.textContent = all;
     elements.debugOutput.style.display = 'block';
     document.getElementById('copy-finish').style.display = 'inline-block';
@@ -1368,7 +1380,8 @@ async function startMigration() {
     log(`===========================\n`, 'error');
 
     // Also show in debug output for easy copying
-    elements.debugOutput.textContent = (handNotes.length ? elements.debugOutput.textContent + '\n\n' : '') + '=== DID NOT UPLOAD ===\n' + failedPlans.map(f => `${f.name || f.planName || ''}: ${f.error || JSON.stringify(f)}`).join('\n');
+    elements.debugOutput.textContent = (((await chrome.storage.local.get(['finishList'])).finishList || '') + '\n\n=== DID NOT UPLOAD ===\n' + failedPlans.map(f => `${f.planName}: ${f.errorMessage}`).join('\n')).trim();
+    document.getElementById('copy-finish').style.display = 'inline-block';
     elements.debugOutput.style.display = 'block';
   }
 
@@ -1396,7 +1409,8 @@ let missingTags = [];  // Tags in FUB but not in Lofty
  * Analyze tags - compare FUB tags with Lofty tags
  */
 async function analyzeTags() {
-  setStatus(elements.tagSyncStatus, 'Analyzing tags...', 'info');
+  if (selectedPlanIds.size === 0) { setStatus(elements.tagSyncStatus, 'Tick the drips you want first (section above), then press Check tags.', 'error'); return; }
+  setStatus(elements.tagSyncStatus, 'Checking tags...', 'info');
   log('Analyzing FUB tags vs Lofty tags...', 'info');
   elements.analyzeTags.disabled = true;
 

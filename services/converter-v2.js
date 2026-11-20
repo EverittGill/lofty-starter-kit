@@ -21,7 +21,7 @@ class ConverterV2 {
   /**
    * @param {Object} plan      kit plan: { name, steps[], pauseOnReply, firstText?, trigger }
    * @param {Object} trig      resolved trigger from popup getTriggerConfig()
-   * @param {Object} options   { accessFlag, pauseOnReply, keepOnStageChange, firstText }
+   * @param {Object} options   { accessFlag, pauseOnReply, pauseOnStageChange }
    * @param {Object} account   { teamId, creatorId } from the signed-in Lofty account
    * @returns {{ payload: Object, drafts: Array<{node: Object, lang: Object}> }}
    *   drafts: one per email node; the client stores each draft, then sets
@@ -131,7 +131,7 @@ class ConverterV2 {
       autoPause: {
         smartPlanId: 0, leadResponse: !!options.pauseOnReply, addSegment: false,
         homeownerIntentChange: false, homeownerNurturingStatusChange: false, outboundCall: false,
-        appointmentMade: false, pipelineChange: false, pauseOtherPlan: false, tagChange: false,
+        appointmentMade: false, pipelineChange: !!options.pauseOnStageChange, pauseOtherPlan: false, tagChange: false,
         sourceChange: false, actionTrigger: 'NoAction', pipeline: 0, groups: [], tags: [], tagModels: [], addSegmentList: []
       },
       forType: 0, withAgent: 'N/A', withLender: 'N/A', category: 1, contactPeriod: 0,

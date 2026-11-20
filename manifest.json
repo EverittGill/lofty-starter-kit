@@ -5,10 +5,9 @@
   "description": "Uploads the KTS email drips to your Lofty account as draft Smart Plans",
   "permissions": [
     "storage",
-    "activeTab",
     "scripting",
     "cookies",
-    "webRequest"
+    "tabs"
   ],
   "host_permissions": [
     "https://crm.lofty.com/*",

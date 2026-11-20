@@ -6,53 +6,7 @@
 // Store captured signatures from browser-level interception
 const capturedSignatures = [];
 
-/**
- * Browser-level network interception using webRequest API
- * This captures ALL requests to Lofty's API, guaranteed to work
- */
-chrome.webRequest.onBeforeSendHeaders.addListener(
-  (details) => {
-    // Only capture API requests
-    if (!details.url.includes('/api/')) return;
-
-    const headers = {};
-    for (const header of details.requestHeaders || []) {
-      headers[header.name.toLowerCase()] = header.value;
-    }
-
-    const signature = headers['signature'];
-    const timestamp = headers['timestamp'];
-
-    if (signature && timestamp) {
-      const capture = {
-        url: details.url,
-        method: details.method,
-        signature: signature,
-        timestamp: timestamp,
-        time: Date.now(),
-        platform: headers['platform'],
-        clientinfo: headers['clientinfo']
-      };
-
-      capturedSignatures.push(capture);
-
-      // Keep only last 50 captures
-      if (capturedSignatures.length > 50) {
-        capturedSignatures.shift();
-      }
-
-      console.log('[FUB-Lofty] CAPTURED from browser:', {
-        url: details.url.substring(0, 80),
-        sig: signature,
-        ts: timestamp
-      });
-    }
-  },
-  { urls: ['https://crm.lofty.com/*', 'https://*.lofty.com/*'] },
-  ['requestHeaders']
-);
-
-console.log('[FUB-Lofty] Background worker started, webRequest listener active');
+console.log('[FUB-Lofty] Background worker started');
 
 // Listen for messages from popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -213,7 +167,9 @@ async function getDebugInfo() {
  * Find a tab with crm.lofty.com open
  */
 async function findLoftyTab() {
-  const tabs = await chrome.tabs.query({ url: 'https://crm.lofty.com/*' });
+  const tabs = (await chrome.tabs.query({ url: 'https://crm.lofty.com/*' }))
+    .filter(t => !/\/(login|signin)/i.test(t.url || ''))
+    .sort((x, y) => (x.discarded ? 1 : 0) - (y.discarded ? 1 : 0) || (y.lastAccessed || 0) - (x.lastAccessed || 0));
   return tabs.length > 0 ? tabs[0] : null;
 }
 

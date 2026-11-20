@@ -1,7 +1,7 @@
 {
  "_metadata": {
   "source": "fub-starter-kit",
-  "builtAt": "2026-11-20T17:52:25.750Z",
+  "builtAt": "2026-11-20T18:01:27.191Z",
   "website": "{{WEBSITE}}",
   "brokerage": "{{BROKERAGE}}"
  },
@@ -16,6 +16,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
@@ -253,6 +254,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
     "delayMinutes": 0
@@ -490,6 +492,7 @@
     "note": "New-lead drip. In FUB it started for new leads from: Ylopo • Buyers (default rule). Attach it to your matching lead source."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from my website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? By the way, my assistant may have already reached out, but I wanted to call you soon.",
     "delayMinutes": 60
@@ -709,6 +712,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request for a real estate agent from #lead_source# for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 1
@@ -916,6 +920,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#.This is #agent_name# with #assigned_agent_company_name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 45
@@ -1141,6 +1146,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -1161,6 +1167,7 @@
     "kind": "manual"
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -1182,6 +1189,7 @@
     "note": "New-lead drip. In FUB it started for new leads from: Branded Website • Buyers. Attach it to your matching lead source."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
@@ -1299,6 +1307,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request for a home valuation for #lead_mailing_address_street#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 1
@@ -1494,6 +1503,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0
@@ -1701,6 +1711,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -1904,6 +1915,7 @@
     "note": "New-lead drip. Attach it to your matching lead source, or apply it by hand."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from #lead_source# for the home at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on? ",
     "delayMinutes": 0
@@ -2045,6 +2057,7 @@
     "note": "New-lead drip. In FUB it started for new leads from: Ylopo Seller • Sellers (rule 2: Tags include Y_SELLER_CASH_OFFER_REQUESTED). Attach it to your matching lead source."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I received your request to review your options for your property. If you'd rather I don't text you, just tell me to stop. Do you prefer a quick transaction, or do you need a bit more time?",
     "delayMinutes": 1
@@ -2258,6 +2271,7 @@
     "note": "New-lead drip. In FUB it started for new leads from: Ylopo • Buyers (rule: Tags include any of YLOPO_DIRECT_CONNECT_FB, YLOPO_DIRECT_CONNECT_PPC); Direct Connect FB • Buyers; Direct Connect PPC • Buyers; Ylopo Seller • Sellers (rule 1: same tags). Attach it to your matching lead source."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your inquiry from my website regarding your real estate needs. If you'd rather I don't text you, just tell me to stop. I will be reaching out ASAP. Is this the best number to reach you on? ",
     "delayMinutes": 1440
@@ -2376,6 +2390,7 @@
     "note": "FUB also started it when the Buyer tag was added to a lead already in one of those stages, and left out leads tagged past client, sphere or RENTER."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -2638,6 +2653,7 @@
     "note": "FUB also started it when the Seller tag was added to a lead already in one of those stages, and left out leads tagged past client, sphere or RENTER."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -2912,6 +2928,7 @@
     "note": "FUB also started it when the Buyer/Seller tag was added to a lead already in one of those stages, and left out leads tagged past client, sphere or RENTER."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -3319,6 +3336,7 @@
     ]
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -3514,6 +3532,7 @@
     "note": "FUB also required: Tags exclude any of: probate or absentee. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -3849,6 +3868,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -4133,6 +4153,7 @@
     "note": "FUB also required: Tags exclude any of: past client or sphere. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -4236,6 +4257,7 @@
     "note": "In FUB: stage changes to A - Hot, B - Warm or C - Cold and the lead has none of the tags Buyer, Seller, Buyer/Seller, past client, sphere, RENTER, expired, fsbo."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -4263,6 +4285,7 @@
     "note": "FUB also required: created more than 30 days ago, no contact for 14 days, stage Lead / Warm / Cold / Archive / Renter, and not tagged past client or sphere."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -4330,6 +4353,7 @@
     "note": "In FUB: stage changes to Active Client or Archive, or a Ylopo AI Voice tag is added. Its one step pauses the lead's other drips."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -4352,6 +4376,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "removeTags",
@@ -4373,6 +4398,7 @@
     "note": "Yearly drip. In FUB it started on the date: 1st Home Anniversary is in 0 days, and each email is 365 days after the one before. Use Lofty's date-based option (birthday / anniversary) to start it."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -4450,6 +4476,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -4602,6 +4629,7 @@
     ]
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -4624,6 +4652,7 @@
     ]
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -4646,6 +4675,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "addTags",
@@ -4673,6 +4703,7 @@
     "note": "FUB also required: Stage includes any of: Lead, A - Hot 1-3 Months, B - Warm 3-6 Months, Archive, C - Cold 6+ Months or Renter - future buyer. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -4696,6 +4727,7 @@
     "note": "FUB also required: Stage includes any of: Lead, A - Hot 1-3 Months, B - Warm 3-6 Months, Archive, C - Cold 6+ Months or Renter - future buyer. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -4805,6 +4837,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "removeTags",
@@ -4842,6 +4875,7 @@
     "note": "In FUB: an inquiry arrives from a lead tagged Unsubscribed / NOTEXT / do_not_text / optout."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -4871,6 +4905,7 @@
     "note": "FUB also required: Stage excludes any of: Trash; Stage includes any of: Lead, A - Hot 1-3 Months, B - Warm 3-6 Months, Archive or C - Cold 6+ Months; Created more than 14 days ago; Last Communication more than 30 days ago. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. Thanks for taking a look at my automated home valuation tool. If you'd rather I don't text you, just tell me to stop. I've recently noticed that the program is just a starting point for understanding a home's value.  Would it be helpful to put together a custom report for you and send it over as soon as possible? \n\nP.s. My assistant may have already reached out, but I wanted to talk to you soon.",
     "delayMinutes": 60
@@ -5031,6 +5066,7 @@
     ]
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "removeTags",
@@ -5054,6 +5090,7 @@
     "note": "Yearly drip. In FUB it started on the date: Birthday is in 0 days, and each email is 365 days after the one before. Use Lofty's date-based option (birthday / anniversary) to start it."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -5187,6 +5224,7 @@
     "note": "Yearly drip. In FUB it started on the date: Relationship Birthday is in 0 days, and each email is 365 days after the one before. Use Lofty's date-based option (birthday / anniversary) to start it."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -5323,6 +5361,7 @@
     "note": "FUB also required: Open House Address is not empty. Add that as a condition in Lofty if you want it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#.This is #agent_name# with #assigned_agent_company_name#. Thank you for attending the open house at #buyer_property_address#. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 45
@@ -5548,6 +5587,7 @@
     "note": "In FUB: the tag \"open house\" is added and Open House Address is EMPTY. (The \"- Manual\" plan has the open house tag trigger; with both on that tag a lead would get both.)"
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "createTask",
@@ -5568,6 +5608,7 @@
     "note": "Yearly drip. In FUB it started on the date: Agnostic Home Anniversary is in 0 days, and each email is 365 days after the one before. Use Lofty's date-based option (birthday / anniversary) to start it."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": false,
    "steps": [
     {
      "action": "sendEmail",
@@ -5645,6 +5686,7 @@
     "note": "FUB started it when a deal in the Buyers pipeline moved to Buyer Contract. Here it is a lead stage plus the Buyer tag; change the stage if yours differs."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -5766,6 +5808,7 @@
     "note": "FUB started it when a deal in the Buyers pipeline moved to Pending."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -5863,6 +5906,7 @@
     "note": "FUB started it when a deal in the Sellers pipeline moved to Listed. Here it is a lead stage plus the Seller tag; change the stage if yours differs."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -5906,6 +5950,7 @@
     "note": "FUB started it when a deal in the Sellers pipeline moved to Pending."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -5967,6 +6012,7 @@
     "note": "In FUB: a deal in the Sellers pipeline moves to Pre-Listing. Apply it by hand or use your own stage."
    },
    "pauseOnReply": false,
+   "pauseOnStageChange": true,
    "steps": [
     {
      "action": "sendEmail",
@@ -6022,6 +6068,7 @@
     "note": "New-lead drip. In FUB it started for new leads from: realtordotcom • Sellers; UpNest by Realtor.com • Sellers. Attach it to your matching lead source."
    },
    "pauseOnReply": true,
+   "pauseOnStageChange": true,
    "firstText": {
     "body": "Hi #lead_first_name#. This is #agent_name# with #assigned_agent_company_name#. I just received your request from our website. If you'd rather I don't text you, just tell me to stop. Is this the best number to reach you on?",
     "delayMinutes": 0

@@ -137,7 +137,9 @@ class LoftyClient {
   /** One signed request through the Lofty tab. Resolves with Lofty's JSON; rejects on any error. */
   request(endpoint, method, payload) {
     return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('Lofty did not answer within 90 seconds. Check the Lofty tab is open and logged in, then try again.')), 90000);
       chrome.runtime.sendMessage({ type: 'LOFTY_REQUEST', endpoint, method, payload }, (response) => {
+        clearTimeout(timer);
         if (chrome.runtime.lastError) return reject(new Error(chrome.runtime.lastError.message));
         if (!response?.success) return reject(new Error(response?.error || 'Lofty request failed'));
         let data = response.data;
@@ -173,8 +175,15 @@ class LoftyClient {
       if (onProgress) onProgress(i + 1, built.drafts.length);
       await new Promise(r => setTimeout(r, 150));
     }
-    const saved = await this.request('/api/smart-plan-server/settings/save/v2', 'POST', built.payload);
-    return saved?.data; // new plan id
+    let saved;
+    try {
+      saved = await this.request('/api/smart-plan-server/settings/save/v2', 'POST', built.payload);
+    } catch (e) { e.atSave = true; throw e; }
+    if (typeof saved?.data !== 'number') {
+      const e = new Error('Lofty did not confirm the plan was saved (no plan id came back). Reload the Lofty tab, make sure you are logged in, and try again.');
+      throw e;
+    }
+    return saved.data; // new plan id
   }
 
   /**

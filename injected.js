@@ -251,22 +251,7 @@
     }
   }
 
-  // Start initialization
-  if (document.readyState === 'complete') {
-    initHooks();
-    findLoftySignatureFunction();
-  } else {
-    window.addEventListener('load', () => {
-      initHooks();
-      findLoftySignatureFunction();
-    });
-  }
-
-  // Also try immediately in case jQuery is already loaded
-  setTimeout(() => {
-    initHooks();
-    findLoftySignatureFunction();
-  }, 100);
+  // Developer hooks (request capture, signature search) are off: this build only sends its own requests.
 
   /**
    * Generate MD5 hash (Lofty uses this for signature)
@@ -1465,10 +1450,6 @@
   }
 
   // Run the search
-  setTimeout(() => {
-    findSignatureInLoftyCode();
-    setupDetailedLogging();
-  }, 2000);
 
   /**
    * AUTOMATED SCRIPT SEARCHER

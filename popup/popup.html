@@ -76,9 +76,22 @@
       </div>
     </section>
 
+    <!-- Step 3: Select Plans -->
+    <section id="plan-selection" class="section">
+      <h2>2. Pick drips</h2>
+      <button id="fetch-plans" style="display:none">Fetch FUB Plans</button>
+      <div id="plans-container">
+        <div id="plans-list"></div>
+        <div class="select-controls">
+          <button id="select-all" class="small">Select All</button>
+          <button id="select-none" class="small">Select None</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Step 2.5: Tag Sync -->
     <section id="tag-sync" class="section">
-      <h2>2. Tags</h2>
+      <h2>3. Tags</h2>
       <p class="hint">Shows which tags the drips need and which your Lofty already has. The drips need these tags to work.</p>
       <div class="tag-sync-buttons">
         <button id="analyze-tags" class="secondary">Check tags</button>
@@ -95,23 +108,10 @@
       </div>
     </section>
 
-    <!-- Step 3: Select Plans -->
-    <section id="plan-selection" class="section">
-      <h2>3. Pick drips</h2>
-      <button id="fetch-plans" style="display:none">Fetch FUB Plans</button>
-      <div id="plans-container">
-        <div id="plans-list"></div>
-        <div class="select-controls">
-          <button id="select-all" class="small">Select All</button>
-          <button id="select-none" class="small">Select None</button>
-        </div>
-      </div>
-    </section>
-
     <!-- Step 4: Migrate -->
     <section id="migration" class="section">
       <h2>4. Upload</h2>
-      <div style="margin-bottom:8px;font-size:11px;color:#aaa;">Plans upload as drafts. To list only the tags the ticked plans need, tick plans before Check tags. <a href="#" id="forget-history" style="color:#8ab4f8;">Forget upload history</a></div>
+      <div style="margin-bottom:8px;font-size:11px;color:#aaa;">Plans upload as drafts.  <a href="#" id="forget-history" style="color:#8ab4f8;">Forget upload history</a></div>
       <label style="display:none"><input type="checkbox" id="include-first-texts"> Add each new-lead drip's first text as step 1 (automatic text: only for leads who agreed to texts)</label>
       <div class="destination-selector" style="display:none">
         <label style="font-size: 12px; color: #aaa; margin-right: 8px;">Destination:</label>

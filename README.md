@@ -1,7 +1,7 @@
 # KTS Drips to Lofty
 
-A small Chrome extension that puts the KTS follow-up system (47 email drips, 490 emails) into your
-Lofty account as Smart Plans. Every plan arrives as a **personal draft with auto-apply off**, so
+A small Chrome extension that puts the KTS follow-up system (47 Smart Plans, 490 emails) into your
+Lofty account. Every plan arrives as a **personal draft with auto-apply off**, so
 nothing is sent to anyone until you apply a plan to a lead or turn it on.
 
 It is not an official Lofty product. It uses the same requests Lofty's website makes while you are
@@ -23,12 +23,14 @@ logged in, and Lofty could change that at any time.
    page and Google review link if you have them, and press **Save**. These go into the emails.
 2. **Lofty connection** should say Connected. If not, reload the Lofty tab and press
    **Check Connection**.
-3. **Tags.** Press **Check tags**, then **Create missing tags**. The drips need these tags to work.
-   If you are on a team account, the tags are added for the whole team, so ask your team lead first.
-4. **Pick drips.** Start with just `*KTS AP Seller Listed`, press **Upload**, and look at it in
-   Lofty under Smart Plans. Then upload the rest, a few at a time. Skip anything with "Ylopo" in
-   the name unless you use Ylopo. Keep this tab open while it uploads.
-5. **The "to finish" list** appears when an upload ends. Press **Copy** and save it somewhere. It
+3. **Pick drips.** Start with just `*KTS AP Seller Listed`. Later, tick the rest a few at a time.
+   Skip anything with "Ylopo" in the name unless you use Ylopo.
+4. **Tags.** Press **Check tags**, then **Create missing tags**. It only creates the tags the
+   ticked drips need. If you are on a team account, the tags are added for the whole team, so ask
+   your team lead first.
+5. **Upload.** Press the **Upload** button and keep this tab open until it says Done. Look at the
+   plan in Lofty under Smart Plans. All 47 take about three minutes.
+6. **The "to finish" list** appears when an upload ends. Press **Copy** and save it somewhere. It
    tells you, for each drip, what still needs doing in Lofty: which trigger was set and should be
    checked, which drips need you to pick a lead source, and the wording of each first text.
 
@@ -41,8 +43,11 @@ name and your website links look right, then remove the plan from that lead.
 ## Good to know
 
 - Triggers look for these lead stages by name: Hot 1-3 Months, Warm 3-6 Months, Cold 6+ Months,
-  Active Client, Pending, Past Client, Sphere, Renter to Buyer. If yours are named differently, the
-  drip uploads without a trigger and the list tells you.
+  Active Client, Pending, Past Client, Sphere, Renter to Buyer (close matches such as "Hot" or
+  "Under Contract" also count). If nothing matches, the drip uploads without a trigger and the
+  list tells you. Open each plan and check its trigger picked the stage you expect.
+- Most drips are set to pause when the lead's stage changes, so a lead who moves on stops getting
+  the old drip. The three Nurture drips and Birthday / Home Anniversary keep running.
 - It doesn't create text messages. The first text for each new-lead drip is in the list for you to
   add by hand if you want it.
 - A drip uploaded once is skipped next time. "Forget upload history" resets that.
