@@ -18,8 +18,9 @@ logged in, and Lofty could change that at any time.
 
 ## Use it
 
-1. **Your details.** Type your website and brokerage (and your About page and Google review link
-   if you have them). Press **Save**. These are put into the emails.
+1. **Your details.** Your website and brokerage are filled in from your Lofty account. Fix them if
+   they are wrong (for example, if you use a different website than your Lofty one), add your About
+   page and Google review link if you have them, and press **Save**. These go into the emails.
 2. **Lofty connection** should say Connected. If not, reload the Lofty tab and press
    **Check Connection**.
 3. **Tags.** Press **Check tags**, then **Create missing tags**. The drips need these tags to work.

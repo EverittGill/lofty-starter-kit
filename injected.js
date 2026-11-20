@@ -1310,7 +1310,9 @@
         const info = key ? JSON.parse(localStorage.getItem(key)) : null;
         if (!info || !info.teamId) throw new Error('Could not read the Lofty account info (infoData) from this tab');
         window.postMessage({ source: 'LOFTY_INJECTED', type: 'ACCOUNT_RESPONSE', requestId, success: true,
-          data: { teamId: info.teamId, userId: info.userId, creatorId: info.teamOwnerId || info.userId } }, '*');
+          data: { teamId: info.teamId, userId: info.userId, creatorId: info.teamOwnerId || info.userId,
+            onTeam: !!(info.teamOwnerId && info.teamOwnerId !== info.userId),
+            siteUrl: (info.myOwnSite && info.myOwnSite.siteUrl) || '', companyName: (info.myOwnSite && info.myOwnSite.companyName) || '' } }, '*');
       } catch (error) {
         window.postMessage({ source: 'LOFTY_INJECTED', type: 'ACCOUNT_RESPONSE', requestId, success: false, error: error.message }, '*');
       }

@@ -133,7 +133,18 @@ async function loadDetails() {
     document.getElementById('d-website').value = agentDetails.website; document.getElementById('d-brokerage').value = agentDetails.brokerage;
     document.getElementById('d-about').value = agentDetails.about || ''; document.getElementById('d-reviews').value = agentDetails.reviews || '';
     setStatus(st, 'Saved', 'success'); applyDetails();
+  } else {
+    // Nothing saved yet: offer what the signed-in Lofty account already says. She checks it and presses Save.
+    loftyClient.getAccount().then(a => {
+      const w = document.getElementById('d-website'), b = document.getElementById('d-brokerage');
+      if (a.siteUrl && !w.value) w.value = a.siteUrl;
+      if (a.companyName && !b.value) b.value = a.companyName;
+      if (a.siteUrl || a.companyName) setStatus(st, 'Filled in from your Lofty account. Change anything that is wrong (for example, if you use a different website), then press Save.', 'info');
+    }).catch(() => {});
   }
+  loftyClient.getAccount().then(a => {
+    if (a.onTeam) document.querySelector('#tag-sync .hint').textContent = 'You are on a team account: tags you create here are added for your whole team. Ask your team lead before pressing Create missing tags.';
+  }).catch(() => {});
   document.getElementById('save-details').addEventListener('click', async () => {
     const v = id => document.getElementById(id).value.trim();
     let website = v('d-website').replace(/\/$/, '');
